@@ -1,0 +1,8 @@
+{
+  "name": "Global University Intelligence",
+  "description": "Discover universities around the world, explore academic cities, compare institutions, research scholarships, plan study-abroad finances, and organize your academic future.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

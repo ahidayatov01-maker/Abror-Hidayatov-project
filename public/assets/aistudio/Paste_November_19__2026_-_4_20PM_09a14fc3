@@ -1,0 +1,2294 @@
+# MASTER PROMPT — GLOBAL UNIVERSITY INTELLIGENCE
+## Complete Product Transformation, Multi-Agent AI Architecture, Premium UI/UX Redesign & Production-Ready Engineering
+
+---
+
+# 1. YOUR ROLE AND PRIMARY MISSION
+
+Act as a Senior Product Architect, Principal Software Engineer, AI Systems Architect, UX/UI Creative Director, Database Architect, and Quality Assurance Engineer.
+
+Your mission is to comprehensively improve and transform the existing **Global University Intelligence** application into a polished, reliable, intelligent, multilingual educational platform.
+
+This is an upgrade of an existing application, NOT a request to build an entirely new application from scratch.
+
+You must inspect the existing project, understand its architecture, identify its weaknesses, and then improve it without destroying its existing functionality, design identity, data, or working integrations.
+
+The final product should feel like a professionally developed educational technology platform with a coherent ecosystem of AI agents, academic planning tools, research resources, productivity features, and university intelligence.
+
+## The most important principle
+
+**QUALITY OVER QUANTITY. STABILITY OVER EXPERIMENTATION. FUNCTIONALITY OVER DECORATION.**
+
+Do not add features simply to make the application look larger or more impressive.
+
+Every modification must have a clear purpose and improve at least one of the following:
+
+- User experience
+- Academic planning
+- Information discovery
+- Productivity
+- AI assistance
+- Data organization
+- Performance
+- Accessibility
+- Reliability
+- Visual consistency
+
+The result must be elegant, understandable, fast, maintainable, and genuinely useful.
+
+---
+
+# 2. CRITICAL PROJECT PROTECTION RULES
+
+These requirements have the highest priority and override every other instruction.
+
+## 2.1. Preserve the existing application
+
+Before modifying anything, inspect the entire project.
+
+Identify and understand:
+
+- Existing application structure
+- Framework and technology stack
+- All routes and navigation paths
+- Existing pages and sections
+- Reusable components
+- Current design system
+- State management
+- Database structure
+- API integrations
+- Authentication
+- User profiles
+- Existing AI functionality
+- University databases
+- Country and city datasets
+- Scholarship information
+- Rankings
+- Maps
+- Existing subscriptions
+- Existing user preferences
+- Existing saved data
+- Current animations
+- Responsive layouts
+
+Do not assume that an existing feature is unnecessary simply because its implementation looks outdated.
+
+Understand what it does before changing it.
+
+## 2.2. Absolute data protection
+
+Preserve all existing user data and application datasets.
+
+Never:
+
+- Delete university records.
+- Truncate country or city datasets.
+- Remove scholarship information.
+- Replace existing verified information with fabricated examples.
+- Reset user preferences.
+- Erase saved universities.
+- Delete comparison lists.
+- Remove existing academic plans.
+- Overwrite user-created tasks or habits.
+- Replace the existing database with a temporary localStorage implementation.
+
+If database changes are necessary:
+
+1. Use controlled migrations.
+2. Preserve existing records.
+3. Maintain backward compatibility where possible.
+4. Provide a rollback strategy.
+5. Verify that existing records remain accessible after migration.
+
+Use localStorage only for appropriate lightweight client-side preferences or temporary state. Continue using the existing database and persistence architecture for important application data.
+
+## 2.3. Preserve working functionality
+
+Do not rewrite the entire application merely because a new implementation appears cleaner.
+
+Preserve existing:
+
+- Component behavior
+- API contracts
+- Route identifiers
+- Authentication flows
+- Database relationships
+- User permissions
+- Search functionality
+- Filters
+- Sorting
+- Saved items
+- Existing integrations
+
+Refactor only when there is a clear technical reason.
+
+If a component works correctly, improve it incrementally rather than replacing it unnecessarily.
+
+## 2.4. Security requirements
+
+Never solve authentication or authorization errors by removing security protections.
+
+If an error such as `Authentication required` appears:
+
+- Identify its actual cause.
+- Inspect the authentication flow.
+- Check API permissions.
+- Verify environment configuration.
+- Inspect server-side authorization.
+- Correct session handling.
+- Ensure guest access follows an explicitly designed guest permission model.
+
+Never expose:
+
+- Gemini API keys
+- Secret environment variables
+- Private API credentials
+- Database credentials
+- Authentication tokens
+
+All protected AI API calls must use secure server-side endpoints.
+
+Guest users may receive explicitly permitted functionality without creating an account, but guest access must never bypass security requirements or expose private information.
+
+## 2.5. No fake functionality
+
+Every interactive control must perform its advertised action.
+
+Do not create:
+
+- Fake AI responses presented as real.
+- Buttons that do nothing.
+- Simulated successful API requests.
+- Fake subscription payments.
+- Fake agent execution.
+- Static sample information presented as live information.
+- Fake progress percentages.
+- Nonfunctional voice controls.
+- Decorative controls that appear interactive but have no action.
+
+If a requested integration is unavailable, provide a clear and honest unavailable state rather than pretending it works.
+
+## 2.6. Safe implementation strategy
+
+Execute the transformation internally in the following order:
+
+1. Audit the existing application.
+2. Identify problems and dependencies.
+3. Prepare an implementation plan.
+4. Establish safe checkpoints or backups.
+5. Implement modular improvements.
+6. Integrate new functionality.
+7. Test each affected module.
+8. Verify existing functionality.
+9. Test the entire application.
+10. Provide a truthful implementation report.
+
+Do not perform a destructive full-project rewrite.
+
+If a requested change requires a risky database migration or an irreversible operation, stop and request approval before executing it.
+
+---
+
+# 3. COMPLETE APPLICATION AUDIT AND OPTIMIZATION
+
+Inspect every existing section and panel.
+
+Do not focus only on the newly requested features.
+
+For each section, evaluate:
+
+- Purpose
+- Ease of use
+- Visual hierarchy
+- Navigation
+- Information architecture
+- Existing functionality
+- Data consistency
+- Performance
+- Responsiveness
+- Accessibility
+- Integration with other modules
+
+Identify:
+
+- Redundant components
+- Unnecessary buttons
+- Repeated information
+- Confusing navigation
+- Poorly organized panels
+- Inconsistent typography
+- Excessive decorative elements
+- Unnecessary modal windows
+- Broken interactions
+- Poor empty states
+- Unclear loading states
+- Inconsistent language translations
+- Unnecessary horizontal scrolling
+- Poor mobile layouts
+
+Improve these problems systematically.
+
+Do not remove an existing section simply because it appears less important. If it is redundant, determine whether its functionality should be integrated elsewhere before changing it.
+
+The goal is a unified application, not a collection of disconnected pages.
+
+---
+
+# 4. GLOBAL APPLICATION INFORMATION ARCHITECTURE
+
+Review the existing sidebar and reorganize it only when the new structure clearly improves navigation.
+
+Use the following proposed information architecture as a reference. Preserve useful existing section names and routes wherever possible.
+
+## GROUP A — GLOBAL DISCOVERY
+
+1. Boshqaruv paneli — Dashboard
+2. Dunyo xaritasi — World Map
+3. Universitetlar — Universities
+4. Shaharlar bo'yicha — Cities Explorer
+5. Mamlakatlar — Countries
+6. Jahon reytinglari — Global Rankings
+
+## GROUP B — ADMISSIONS & ACADEMIC RESEARCH
+
+7. Akademik dasturlar — Academic Programs
+8. Stipendiyalar — Scholarships
+9. Qabul tahlili — Admission Analysis
+10. Taqqoslash — Comparison
+
+## GROUP C — PERSONAL ACADEMIC WORKSPACE
+
+11. Mening universitetlarim — My Universities
+12. Akademik yo'lim — Academic Roadmap
+13. Research Library
+14. Routine
+15. To-Do List
+16. Habits Tracker
+17. Financial Planner
+
+## GROUP D — AI INTELLIGENCE
+
+18. AI Maslahatchi
+
+## GROUP E — ACCOUNT & APPLICATION
+
+19. Tariflar va to'lov — Plans & Billing
+20. Ilova va muallif haqida — About
+21. Sozlamalar — Settings
+
+This is a proposed structure, not permission to create duplicate pages.
+
+If an equivalent section already exists, improve and reuse it.
+
+The sidebar must remain easy to understand, compact, and visually balanced.
+
+Use:
+
+- Clear group labels
+- Consistent iconography
+- Appropriate active-state indicators
+- Optional item-count indicators
+- Collapsible groups where useful
+- Smooth but subtle interactions
+- Responsive mobile navigation
+
+Do not use excessive glowing effects or decorative badges.
+
+---
+
+# 5. COMPLETE 10-AGENT AI ECOSYSTEM
+
+Create a structured multi-agent AI architecture with a maximum of **10 specialized user-facing agents**.
+
+The agents must work as one coordinated system rather than ten independent chatbots.
+
+## 5.1. Three agent teams
+
+Organize the agents into three functional clusters.
+
+### TEAM 1 — GLOBAL ADMISSIONS & RESEARCH
+
+**Agent 1: University Scout**
+
+Responsibilities:
+
+- Discover universities.
+- Match universities to user preferences.
+- Analyze academic requirements.
+- Consider budget and preferred countries.
+- Compare available study options.
+- Recommend relevant universities.
+- Save selected universities to My Universities when authorized.
+
+**Agent 2: Scholarship & Grant Hunter**
+
+Responsibilities:
+
+- Research scholarship opportunities.
+- Identify full and partial funding options.
+- Analyze eligibility requirements.
+- Organize application deadlines.
+- Identify required documents.
+- Compare scholarship opportunities.
+- Connect relevant opportunities to the Academic Roadmap.
+
+**Agent 3: Admission Profile Auditor**
+
+Responsibilities:
+
+- Analyze the user's academic profile.
+- Evaluate academic preparation.
+- Identify missing documents.
+- Identify missing examinations or language qualifications.
+- Compare the profile with official admission requirements.
+- Explain weaknesses and possible improvements.
+
+Never present unsupported admission probabilities as verified facts. If an estimate is provided, explain its assumptions, uncertainty, and evidence.
+
+**Agent 4: Transfer & Pathway Architect**
+
+Responsibilities:
+
+- Explore university transfer possibilities.
+- Analyze credit-transfer pathways.
+- Compare direct admission and transfer routes.
+- Identify prerequisites.
+- Explain potential limitations.
+- Build alternative academic pathways.
+
+### TEAM 2 — PERSONAL PRODUCTIVITY & ACADEMIC EXECUTION
+
+**Agent 5: Academic Cartographer**
+
+Responsibilities:
+
+- Power Akademik yo'lim.
+- Generate personalized academic routes.
+- Create milestones and alternative pathways.
+- Track academic progress.
+- Adapt the roadmap when goals or circumstances change.
+
+**Agent 6: Smart Routine Architect**
+
+Responsibilities:
+
+- Power Routine.
+- Generate daily, weekly, monthly, and yearly routines.
+- Balance academic work and personal commitments.
+- Analyze user capacity.
+- Adapt schedules to progress and changing priorities.
+
+**Agent 7: Task & Priority Orchestrator**
+
+Responsibilities:
+
+- Power To-Do List.
+- Recommend high-priority tasks.
+- Identify overdue or important actions.
+- Detect duplicate tasks.
+- Connect tasks to academic milestones.
+- Help users organize execution.
+
+**Agent 8: Habit & Consistency Coach**
+
+Responsibilities:
+
+- Power Habits Tracker.
+- Analyze habit consistency.
+- Identify patterns.
+- Suggest realistic improvements.
+- Connect relevant habits to academic goals.
+
+### TEAM 3 — FINANCE & PLATFORM NAVIGATION
+
+**Agent 9: Tuition & Living Cost Analyst**
+
+Responsibilities:
+
+- Power Financial Planner.
+- Analyze tuition.
+- Estimate living expenses.
+- Organize accommodation, food, transportation, and other costs.
+- Compare available scholarship coverage.
+- Create financial scenarios.
+
+Clearly distinguish verified costs from estimates.
+
+**Agent 10: Voice Guide & Platform Navigator**
+
+Responsibilities:
+
+- Power Audio Guide.
+- Understand user instructions.
+- Identify the user's current application context.
+- Navigate between sections.
+- Locate universities, countries, maps, and features.
+- Highlight relevant interface elements.
+- Explain how to use the application.
+
+## 5.2. Agent orchestration architecture
+
+Create one central orchestrator responsible for:
+
+- Understanding the user's request.
+- Selecting the appropriate agent.
+- Delegating specialized tasks.
+- Combining results.
+- Resolving overlapping responsibilities.
+- Returning one coherent response.
+- Tracking task status.
+- Managing permissions.
+
+Agents must not independently create uncontrolled additional agents.
+
+The platform must enforce a strict maximum of ten user-facing specialized agents.
+
+The central orchestration system is infrastructure, not an additional user-facing agent.
+
+## 5.3. Agent management interface
+
+Inside AI Maslahatchi, create an elegant agent management interface.
+
+Include:
+
+- Three team selectors.
+- Individual agent cards.
+- Agent descriptions.
+- Responsibilities.
+- Current availability.
+- Current task.
+- Execution status.
+- Recent results.
+- Relevant usage information.
+
+Useful states:
+
+- Idle
+- Thinking
+- Researching
+- Processing
+- Waiting for approval
+- Completed
+- Failed
+- Cancelled
+
+Do not use excessive animations or visual clutter.
+
+## 5.4. Agent execution reliability
+
+Implement:
+
+- Typed tool contracts.
+- Input and output validation.
+- Permission checks.
+- Task ownership.
+- Duplicate-task prevention.
+- Timeouts.
+- Retry policies.
+- Cancellation.
+- Error handling.
+- Execution logs.
+- Idempotent actions where appropriate.
+
+Every agent action that modifies user data must be recorded.
+
+Require user approval before consequential actions such as deleting data, submitting applications, making payments, or changing important account settings.
+
+When an agent successfully completes an authorized action, display a small confirmation message containing:
+
+- Agent name
+- Completed action
+- Result
+- Relevant destination
+
+Never show a successful confirmation before the operation actually succeeds.
+
+---
+
+# 6. COMPLETE REDESIGN OF AKADEMIK YO'LIM
+
+This is one of the most important sections of the application.
+
+The current roadmap must not remain a simple vertical timeline or a collection of connected rectangles.
+
+Transform it into a visually compelling, interactive academic navigation map.
+
+## 6.1. Core concept
+
+Think of Akademik yo'lim as a personalized navigation system for the user's educational future.
+
+The user should be able to understand:
+
+- Where they are now.
+- Where they want to go.
+- What steps are required.
+- Which steps are completed.
+- Which steps are currently active.
+- What obstacles remain.
+- What alternative routes exist.
+- How much time and preparation may be needed.
+
+The map should communicate progress visually, not only through text.
+
+## 6.2. Visual map architecture
+
+Use an interactive SVG-based or another suitable rendering architecture supported by the existing technology stack.
+
+Create an actual map-like composition with:
+
+- Meaningful geographic or abstract cartographic regions.
+- Curved routes.
+- Branching pathways.
+- Milestone stations.
+- Active route illumination.
+- Future route segments.
+- Completed route segments.
+- Alternative pathways.
+- Progress indicators.
+- Current-position marker.
+- Route legends.
+- Contextual information panels.
+
+Avoid a basic straight line connecting identical cards.
+
+The visual language should feel like a refined navigation map, not a generic project-management timeline.
+
+Use subtle terrain-inspired patterns, restrained grid details, and carefully controlled contrast.
+
+Do not make the map visually noisy.
+
+## 6.3. Route types
+
+Support three different pathway types where relevant to the user's goals.
+
+**Route A — Direct Entry**
+
+Possible stages:
+
+1. Current educational level
+2. Academic preparation
+3. Language preparation
+4. Required examinations
+5. University research
+6. Application preparation
+7. Document submission
+8. Admission decision
+9. Scholarship or financial planning
+10. Arrival and enrollment
+
+**Route B — Transfer Pathway**
+
+Possible stages:
+
+1. Current educational level
+2. Local university selection
+3. Initial university studies
+4. Academic performance development
+5. Credit-transfer research
+6. Target university requirements
+7. Transfer application
+8. Final admission
+
+Never assume that a transfer pathway is available without checking the target institution's official policies.
+
+**Route C — Scholarship Pathway**
+
+Possible stages:
+
+1. Scholarship discovery
+2. Eligibility assessment
+3. Academic preparation
+4. Language and examination preparation
+5. Required documents
+6. Research or study plan
+7. Application submission
+8. Interview preparation
+9. Final decision
+10. Pre-departure preparation
+
+The exact stages must adapt to the scholarship and university selected by the user.
+
+## 6.4. Route interaction
+
+Users should be able to:
+
+- Switch between available routes.
+- Zoom in and out.
+- Pan across the map.
+- Select individual milestones.
+- View milestone details.
+- Mark eligible milestones as completed.
+- Add personal milestones.
+- Compare alternative routes.
+- See route progress.
+- Request AI recommendations.
+
+Clicking a milestone should open a contextual detail panel containing:
+
+- Milestone title
+- Description
+- Why it matters
+- Required actions
+- Documents
+- Prerequisites
+- Estimated duration, when supported
+- Estimated cost, when supported
+- Related resources
+- Completion status
+- Connected tasks
+
+Include a clear completion action.
+
+Completing one milestone should update the route only when the user confirms or the system verifies the required completion condition.
+
+## 6.5. AI-generated route
+
+The Academic Cartographer Agent should analyze:
+
+- User profile
+- Current education level
+- Academic goals
+- Target degree
+- Target countries
+- Preferred universities
+- Available budget
+- Language skills
+- Examination results
+- Available time
+- Existing documents
+- Personal constraints
+
+Then generate an appropriate academic pathway.
+
+If critical information is missing, ask a concise clarification rather than inventing personal information.
+
+The generated roadmap must be editable.
+
+## 6.6. Evidence and reliability
+
+Every important academic requirement must be classified as one of the following:
+
+- Verified official information
+- User-provided information
+- AI-generated recommendation
+- Estimated information
+- Information requiring verification
+
+Where possible, display:
+
+- Source
+- Publication or update date
+- Last verification date
+- Confidence or uncertainty
+
+Never invent admission deadlines, university requirements, scholarships, tuition fees, or guaranteed acceptance.
+
+---
+
+# 7. NEW ROUTINE SECTION
+
+Create a dedicated **Routine** section.
+
+Its purpose is to transform long-term academic goals into realistic daily actions.
+
+The Smart Routine Architect Agent should use the user's available information and relevant application data.
+
+## 7.1. Four planning horizons
+
+Create four clearly organized views:
+
+- Daily
+- Weekly
+- Monthly
+- Yearly
+
+### Daily Routine
+
+Display:
+
+- Time blocks
+- Academic activities
+- Personal commitments
+- Breaks
+- Rest periods
+- Important priorities
+- Completion status
+
+### Weekly Routine
+
+Display:
+
+- Weekly objectives
+- Subject distribution
+- Examination preparation
+- Study sessions
+- Review sessions
+- Rest and recovery
+- Weekly progress
+
+### Monthly Routine
+
+Display:
+
+- Main monthly goals
+- Examination milestones
+- Academic preparation
+- Document preparation
+- Important deadlines
+- Progress review
+
+### Yearly Routine
+
+Display:
+
+- Long-term objectives
+- Major academic milestones
+- Application periods
+- Examination targets
+- Skill-development goals
+- Expected achievements
+
+## 7.2. Intelligent generation
+
+The agent should consider:
+
+- User's current academic stage.
+- Actual available study time.
+- Existing commitments.
+- User-defined preferences.
+- Target examinations.
+- Academic roadmap.
+- Existing habits.
+- Current tasks.
+- Upcoming deadlines.
+- Recent progress.
+
+Never assume that the user has unlimited time or energy.
+
+Do not generate unrealistic schedules that fill every hour.
+
+Include reasonable breaks, buffer time, and flexibility.
+
+## 7.3. Editing and control
+
+Users must be able to:
+
+- Edit time blocks.
+- Add activities.
+- Remove activities.
+- Change priorities.
+- Mark activities as completed.
+- Lock important time blocks.
+- Regenerate selected periods.
+- Accept or reject AI suggestions.
+- Restore a previous version where supported.
+
+AI regeneration must not silently overwrite locked or user-edited information.
+
+## 7.4. Integration
+
+Routine must integrate with:
+
+- Akademik yo'lim
+- To-Do List
+- Habits Tracker
+- Research Library
+- AI Maslahatchi
+
+For example, an upcoming academic milestone may generate suggested preparation activities.
+
+However, do not create duplicate tasks automatically.
+
+Clearly distinguish automatically generated suggestions from user-approved commitments.
+
+---
+
+# 8. NEW TO-DO LIST SECTION
+
+Create a dedicated To-Do List workspace.
+
+It should combine intelligent recommendations with complete user control.
+
+## 8.1. Two main areas
+
+### Area A — AI Tavsiya etgan vazifalar
+
+Display a small, relevant set of recommended tasks.
+
+Prefer approximately three to five useful recommendations when sufficient information exists.
+
+Each recommendation should contain:
+
+- Task title
+- Short explanation
+- Priority
+- Suggested deadline, if grounded
+- Related academic goal
+- Reason for recommendation
+- Responsible agent
+
+Available actions:
+
+- Add
+- Reject
+- Edit
+- Reschedule
+- Refresh recommendations
+
+Recommendations must remain suggestions until accepted.
+
+### Area B — Mening vazifalarim
+
+Users should be able to:
+
+- Create tasks manually.
+- Edit task descriptions.
+- Set deadlines.
+- Change priority.
+- Assign categories.
+- Mark tasks completed.
+- Delete tasks with appropriate confirmation.
+- Search and filter.
+- Organize tasks.
+
+Suggested categories:
+
+- Examinations
+- Documents
+- Universities
+- Scholarships
+- Academic preparation
+- Personal
+- Other
+
+Suggested filters:
+
+- All
+- Active
+- Completed
+- Overdue
+- Upcoming
+
+## 8.2. Smart synchronization
+
+Connect To-Do List with:
+
+- Routine
+- Akademik yo'lim
+- AI Maslahatchi
+- Habits Tracker
+
+When an academic milestone creates a task recommendation, display its origin.
+
+Prevent duplicate tasks.
+
+Do not modify or delete existing user-created tasks without permission.
+
+If the user edits an AI-generated task, preserve the user's changes.
+
+---
+
+# 9. HABITS TRACKER — COMPLETE REDESIGN
+
+Rename **PAPER Kundalik** to **Habits Tracker** throughout the entire application.
+
+Update:
+
+- Sidebar
+- Page titles
+- Navigation labels
+- Internal references
+- Agent references
+- Relevant translations
+- Breadcrumbs
+- Settings
+- Notifications
+
+Preserve existing habit records and functionality.
+
+## 9.1. Visual design
+
+Create a refined, premium habit-tracking workspace.
+
+Use a thoughtful Bento Grid layout instead of a monotonous collection of identical cards.
+
+At the top, display three compact summary elements:
+
+**Daily Completion**
+
+- Percentage completed
+- Circular progress indicator
+- Clear daily status
+
+**Current Streak**
+
+- Current consistency streak
+- Appropriate visual indicator
+- Historical context where available
+
+**Weekly Consistency**
+
+- Seven-day overview
+- Completed and incomplete days
+- Readable progress visualization
+
+## 9.2. Habit cards
+
+Each habit card should contain:
+
+- Habit name
+- Category
+- Small meaningful icon
+- Frequency
+- Current streak
+- Weekly activity
+- Completion control
+- Optional notes
+
+Provide a simple one-tap completion interaction.
+
+Use a subtle visual change when a habit is completed.
+
+## 9.3. Habit management
+
+Users should be able to:
+
+- Create habits.
+- Edit habits.
+- Archive habits.
+- Set frequency.
+- Select active days.
+- Review history.
+- Track consistency.
+- Add notes.
+- View meaningful statistics.
+
+The Habit & Consistency Coach may suggest improvements, but must never shame the user or make unrealistic recommendations.
+
+Keep the interface focused and uncluttered.
+
+---
+
+# 10. AI MASLAHATCHI — ADVANCED APPLICATION-CONTEXT AI ASSISTANT
+
+Redesign AI Maslahatchi as the central intelligence interface of Global University Intelligence.
+
+It must be more than a simple chatbot.
+
+It should understand the application, use relevant data, coordinate specialized agents, and help the user complete educational tasks.
+
+## 10.1. Core capabilities
+
+AI Maslahatchi should be able to:
+
+- Understand academic goals.
+- Analyze user-provided information.
+- Search relevant university information.
+- Find scholarships.
+- Explain admission requirements.
+- Analyze academic pathways.
+- Create roadmap suggestions.
+- Recommend routine improvements.
+- Generate task suggestions.
+- Analyze financial planning information.
+- Search the Research Library.
+- Navigate the application.
+- Explain how to use application features.
+
+All answers should remain focused on the educational and productivity purposes of the application.
+
+## 10.2. Context awareness
+
+Where permitted, the assistant should understand:
+
+- Current page
+- Selected university
+- Selected country
+- Current academic milestone
+- Active tasks
+- Existing routine
+- Relevant saved materials
+- User's stated goals
+
+Use only the context necessary for the current request.
+
+Do not expose private data unnecessarily.
+
+## 10.3. Agent collaboration
+
+When a request requires specialized knowledge, the central orchestrator should select the appropriate agents.
+
+For example:
+
+A scholarship research request may involve:
+
+1. Scholarship & Grant Hunter
+2. Admission Profile Auditor
+3. Academic Cartographer
+
+The assistant should combine their results into one understandable response.
+
+Do not display unnecessary internal agent conversations to the user.
+
+## 10.4. Action execution
+
+AI Maslahatchi may perform authorized actions such as:
+
+- Saving a university.
+- Adding a university to comparison.
+- Creating a task.
+- Updating a routine.
+- Generating a roadmap.
+- Searching research materials.
+- Navigating to a relevant page.
+
+Before modifying important user data, obtain confirmation when appropriate.
+
+Never claim an action was completed unless the corresponding backend or application operation actually succeeded.
+
+## 10.5. Chat interface
+
+Create a professional interface with:
+
+- Clear conversation history.
+- New consultation action.
+- Streaming responses.
+- Appropriate loading states.
+- Agent activity indicators.
+- Source references.
+- Contextual action suggestions.
+- Copy functionality.
+- Error recovery.
+- Responsive layout.
+
+Quick prompt suggestions should be relevant to the current application context.
+
+Do not overcrowd the interface with unnecessary buttons.
+
+---
+
+# 11. MULTILINGUAL AUDIO GUIDE & VOICE NAVIGATOR
+
+Add an Audio Guide control in the top header, positioned near the language selector.
+
+The Audio Guide must use the language currently selected in application settings.
+
+Support the languages already available in the application. If additional languages are configured, make the voice system extensible.
+
+## 11.1. Main controls
+
+Provide:
+
+- Audio Guide ON/OFF
+- Push-to-talk microphone button
+- Stop speaking button
+- Text input fallback
+- Transcription display
+- Voice response
+- Clear permission and error states
+
+Use a simple, polished interface.
+
+## 11.2. Voice interaction
+
+The user should be able to hold the microphone button, speak naturally, and receive a spoken response.
+
+Example:
+
+The user is viewing any section and says:
+
+"I cannot find Uzbekistan on the world map. Help me."
+
+The system should:
+
+1. Recognize the request.
+2. Understand the user's selected language.
+3. Identify the intended destination.
+4. Navigate to Dunyo xaritasi.
+5. Locate Uzbekistan.
+6. Move the map to the relevant location.
+7. Highlight Uzbekistan.
+8. Open its information card when appropriate.
+9. Explain what is being displayed.
+10. Provide a spoken response.
+
+This must work through real application navigation and map APIs, not fabricated visual demonstrations.
+
+## 11.3. Semantic navigation architecture
+
+Do not use fragile coordinate-based automation or simulated mouse movements.
+
+Create a semantic action registry.
+
+Examples of supported application actions:
+
+- navigateToSection(section, params)
+- locateCountry(countryId)
+- locateUniversity(universityId)
+- highlightMapItem(itemId)
+- openDetails(itemId)
+- searchUniversities(criteria)
+- saveUniversity(universityId)
+- addToComparison(universityIds)
+- createTask(taskData)
+- generateAcademicRoadmap(parameters)
+
+Use actual application functions and validated parameters.
+
+The voice system may navigate, focus, highlight, and explain.
+
+It must not independently execute destructive, financial, or otherwise consequential operations without appropriate confirmation.
+
+## 11.4. Technical implementation
+
+Inspect the browser and framework capabilities before selecting speech technologies.
+
+Possible browser capabilities include:
+
+- SpeechRecognition
+- webkitSpeechRecognition
+- speechSynthesis
+
+Use supported APIs only.
+
+Do not assume that all browsers support the same features.
+
+Provide:
+
+- Microphone permission handling.
+- Clear permission-denied messages.
+- Speech recognition error handling.
+- Text input fallback.
+- Spoken-response cancellation.
+- Recording-state indicators.
+- Language-specific voice selection where available.
+- Privacy-conscious handling of voice data.
+
+If speech recognition is unavailable, explain the limitation and retain a usable text-based alternative.
+
+Never display a fake recording state when no audio is being captured.
+
+## 11.5. Contextual audio tutorials
+
+When requested, the Audio Guide should explain the current page.
+
+It may highlight important interface elements sequentially.
+
+The user must be able to stop the tutorial immediately.
+
+The tutorial must not block interaction with the application.
+
+---
+
+# 12. COMPLETE LIGHT MODE AND DARK MODE REDESIGN
+
+The current Light Mode must be treated as an incomplete design system that needs comprehensive correction.
+
+Do not simply change the background from black to white.
+
+Build two complete visual themes.
+
+## 12.1. Design tokens
+
+Create a centralized theme system.
+
+Define tokens for:
+
+- Application background
+- Main surfaces
+- Elevated surfaces
+- Cards
+- Borders
+- Primary text
+- Secondary text
+- Muted text
+- Accent colors
+- Buttons
+- Inputs
+- Focus states
+- Hover states
+- Disabled states
+- Tooltips
+- Dialogs
+- Navigation
+- Charts
+- Progress indicators
+- Notifications
+- Shadows
+
+Every component must use theme tokens rather than scattered hardcoded colors.
+
+## 12.2. Light Mode
+
+Use a refined, layered visual palette.
+
+Suggested starting references:
+
+- Main background: `#F1F5F9`
+- Secondary background: `#F8FAFC`
+- Elevated surfaces: `#FFFFFF`
+- Borders: `#E2E8F0`
+- Primary text: `#0F172A`
+- Secondary text: `#475569`
+
+Use subtle shadows and carefully controlled contrast.
+
+Avoid a completely flat white interface.
+
+The final palette should match the existing brand identity.
+
+## 12.3. Dark Mode
+
+Preserve the best aspects of the current Dark Mode.
+
+Improve:
+
+- Surface hierarchy
+- Contrast
+- Text readability
+- Borders
+- Modal visibility
+- Card separation
+- Focus indicators
+- Chart readability
+
+Avoid excessive pure black.
+
+## 12.4. Adaptive logo and iconography
+
+Ensure that the Global University Intelligence logo remains clearly visible in both themes.
+
+Adapt:
+
+- Logo mark
+- Wordmark
+- Navigation icons
+- Illustration assets
+- Charts
+- Badges
+- Maps
+- Empty-state graphics
+
+Do not simply invert every image or icon.
+
+## 12.5. Theme persistence
+
+Theme selection should persist across sessions using the existing settings architecture.
+
+If appropriate, support system theme detection as an initial preference.
+
+Test every major page and component in both themes.
+
+No section should remain visually unfinished in either mode.
+
+---
+
+# 13. PREMIUM ANIMATION AND INTERACTION SYSTEM
+
+The current animations are inconsistent, sometimes laggy, and occasionally fail in particular application windows.
+
+Redesign the animation system comprehensively.
+
+## 13.1. Animation principles
+
+Every animation must have a purpose.
+
+Use animations to communicate:
+
+- Navigation
+- Hierarchy
+- State changes
+- Completion
+- Focus
+- Context
+- Feedback
+
+Avoid animations that exist only for decoration.
+
+## 13.2. Distinct section transitions
+
+Major application areas may have slightly different entrance behaviors while maintaining a coherent overall animation language.
+
+Examples:
+
+**Discovery sections**
+
+Subtle fade and directional movement.
+
+**University detail views**
+
+Refined scale and opacity transition.
+
+**AI and chat interfaces**
+
+Smooth content appearance and responsive panel transitions.
+
+**Maps**
+
+Controlled camera-like movement when navigating to a location.
+
+**Drawers and side panels**
+
+Smooth horizontal movement.
+
+**Routine and task views**
+
+Subtle content transitions that do not interfere with editing.
+
+These are design directions, not mandatory effects. Select the best transition for the actual layout.
+
+## 13.3. Performance
+
+Prefer CSS transitions and GPU-friendly properties such as:
+
+- transform
+- opacity
+
+Avoid unnecessary JavaScript animation loops.
+
+Do not animate layout-heavy properties continuously.
+
+Use efficient SVG or CSS animations where appropriate.
+
+Do not claim guaranteed 60 FPS without measurement.
+
+## 13.4. Accessibility
+
+Respect `prefers-reduced-motion`.
+
+Provide reduced-motion alternatives.
+
+Animations must never prevent the user from accessing information or completing an action.
+
+---
+
+# 14. RESEARCH LIBRARY INTEGRATION
+
+Inspect the existing Research Library before making changes.
+
+Preserve its current useful functionality.
+
+Its purpose is to organize academic materials and make them useful across the application.
+
+Where supported, users should be able to:
+
+- Upload materials.
+- Organize files.
+- Search documents.
+- Preview supported formats.
+- Add notes.
+- Categorize resources.
+- Find relevant materials.
+- Connect materials to academic goals.
+
+The AI system should be able to analyze permitted materials and identify relevant information.
+
+For example:
+
+A document about a scholarship may be connected to:
+
+- Scholarship research
+- Academic Roadmap
+- To-Do List
+- Routine
+- AI Maslahatchi
+
+Use actual file-processing and storage integrations.
+
+Respect file permissions and access controls.
+
+Never claim that an inaccessible document was analyzed.
+
+Avoid adding redundant file-management interfaces if the existing Research Library already provides them.
+
+---
+
+# 15. FINANCIAL PLANNER IMPROVEMENTS
+
+Improve Financial Planner as a practical academic finance tool.
+
+Where supported by actual data, organize:
+
+- Tuition
+- Accommodation
+- Food
+- Transportation
+- Insurance
+- Study materials
+- Application costs
+- Scholarship coverage
+- Personal budget
+- Estimated total cost
+
+Support different scenarios.
+
+For example:
+
+- Full scholarship
+- Partial scholarship
+- Self-funded education
+- Different accommodation options
+
+Clearly distinguish:
+
+- Verified prices
+- User-entered values
+- Estimated costs
+- AI recommendations
+
+Do not fabricate current tuition or living costs.
+
+Where possible, show the source and date of important financial information.
+
+Connect Financial Planner with the Academic Roadmap and Scholarship Agent.
+
+---
+
+# 16. NEW SECTION: ABOUT THE APPLICATION & ITS CREATOR
+
+Create a polished section called:
+
+**Ilova va muallif haqida**
+
+It should contain two distinct areas.
+
+## 16.1. About Global University Intelligence
+
+Explain:
+
+- What the application does.
+- Its purpose.
+- Its main capabilities.
+- How students can use it.
+- How AI agents support academic planning.
+- How the different sections work together.
+
+Keep the explanation clear and professional.
+
+## 16.2. Creator profile
+
+Create an elegant creator profile area.
+
+Possible fields:
+
+- Name
+- Profile image
+- Short biography
+- Vision
+- Motivation
+- Project story
+- Contact information
+- Social links
+
+Important:
+
+Do not invent the creator's biography, qualifications, awards, personal history, or achievements.
+
+Use information already explicitly provided and verified in the project.
+
+Otherwise, provide editable fields or clear placeholders.
+
+Do not publish private contact details without authorization.
+
+The section should feel authentic, not like a fabricated corporate profile.
+
+---
+
+# 17. SUBSCRIPTION ARCHITECTURE — FREE, MIDDLE & PREMIUM
+
+Redesign the subscription experience to create a fair and understandable three-tier model.
+
+The middle plan should be the most attractive balance of price and functionality.
+
+The highest plan must justify its price through genuinely advanced capabilities.
+
+The free plan must remain useful.
+
+Do not make the entire application inaccessible to free users.
+
+## 17.1. Proposed plan structure
+
+Preserve existing plan names if they are already established in the application.
+
+Otherwise, use these proposed names:
+
+### PLAN 1 — FREE EXPLORER
+
+Designed for users who want to explore the platform and manage their basic academic preparation.
+
+Potential features:
+
+- Access to core university discovery.
+- World Map.
+- Countries.
+- Cities.
+- University browsing.
+- Basic comparison.
+- Limited saved universities.
+- Manual To-Do List.
+- Basic Habits Tracker.
+- Basic academic roadmap.
+- Limited AI Maslahatchi usage.
+- Basic application guidance.
+
+The free plan should still provide meaningful educational value.
+
+### PLAN 2 — SCHOLAR PLUS
+
+**Recommended best-value plan.**
+
+Designed for students who actively prepare for international university admission.
+
+Potential features:
+
+- Everything in Free Explorer.
+- Expanded saved universities.
+- Expanded comparison functionality.
+- More generous AI usage.
+- Access to specialized agents.
+- Full Routine generation.
+- AI task recommendations.
+- Advanced Academic Roadmap.
+- Multiple academic pathways.
+- More advanced Audio Guide capabilities.
+- Expanded research assistance.
+- More detailed financial planning.
+
+This plan should be the most attractive choice for the majority of active students.
+
+### PLAN 3 — GLOBAL ELITE PRO
+
+Designed for advanced academic planning and intensive AI-assisted workflows.
+
+Potential features:
+
+- Everything in Scholar Plus.
+- Maximum permitted 10-agent configuration.
+- Advanced agent orchestration.
+- More generous usage quotas.
+- Advanced academic profile analysis.
+- Detailed scholarship research.
+- Advanced admission preparation.
+- Expanded financial forecasting.
+- Advanced analytics.
+- Custom routine templates.
+- Exportable academic plans.
+- Priority processing where technically supported.
+
+## 17.2. Entitlement system
+
+Do not hardcode subscription restrictions throughout the frontend.
+
+Create a centralized entitlement system.
+
+Each feature should have an explicit permission or quota.
+
+Examples:
+
+- Maximum saved universities
+- Maximum comparison items
+- Daily AI messages
+- Available agents
+- Routine generation quota
+- Audio functionality
+- Advanced analysis access
+- Export functionality
+
+These values must be configurable through the existing backend or an appropriate centralized configuration.
+
+## 17.3. Pricing
+
+Do not automatically impose the example prices of $9 or $24 from the reference prompt.
+
+First inspect:
+
+- Existing subscription model
+- Payment integrations
+- Operational costs
+- AI API costs
+- Storage costs
+- Usage patterns
+- Current pricing configuration
+
+If real pricing information is unavailable, provide editable price fields and configuration placeholders.
+
+Never claim that a payment has been processed if no actual payment integration exists.
+
+## 17.4. Plan comparison interface
+
+Create a polished comparison area.
+
+Each plan must clearly show:
+
+- Plan name
+- Price, when configured
+- Target user
+- Included features
+- Usage limits
+- Important restrictions
+- Upgrade action
+
+Place a concise feature explanation directly below each plan.
+
+Highlight Scholar Plus as the recommended balance only if the actual feature distribution supports that recommendation.
+
+## 17.5. Subscription experience
+
+Users should be able to understand:
+
+- Their current plan
+- Available features
+- Used quota
+- Remaining quota
+- Upgrade possibilities
+- Plan limitations
+
+When a user reaches a limit, explain it clearly and offer an appropriate upgrade option.
+
+Never interrupt unrelated application workflows with unnecessary paywalls.
+
+## 17.6. Testing plan permissions
+
+If a developer-only preview mechanism exists or can be implemented safely, allow testing of different entitlement configurations.
+
+Do not allow ordinary users to grant themselves paid access through a frontend-only toggle.
+
+Subscription permissions must be validated server-side.
+
+---
+
+# 18. ADDITIONAL USEFUL FEATURES — ONLY WHEN JUSTIFIED
+
+Inspect the existing application before adding more sections.
+
+Consider the following only if an equivalent capability does not already exist.
+
+## 18.1. Help Center
+
+A concise guide explaining important application features.
+
+Include contextual help where appropriate.
+
+## 18.2. Onboarding
+
+A simple first-use experience that helps users configure their academic profile.
+
+Do not force users through an unnecessarily long questionnaire.
+
+Collect only information that improves the application.
+
+## 18.3. Notifications
+
+A centralized notification area for meaningful events:
+
+- Upcoming deadlines
+- Important academic milestones
+- Relevant task reminders
+- Completed AI operations
+- Important application updates
+
+Avoid unnecessary notifications.
+
+## 18.4. Progress Analytics
+
+A clear overview of actual academic progress.
+
+Possible indicators:
+
+- Completed milestones
+- Active goals
+- Habit consistency
+- Task completion
+- Routine adherence
+- Preparation progress
+
+Do not generate misleading percentages from incomplete data.
+
+## 18.5. Data & Privacy
+
+Where appropriate, provide transparent controls for:
+
+- User data
+- AI context permissions
+- Connected integrations
+- Data export
+- Account settings
+- Privacy information
+
+Do not duplicate existing settings.
+
+Only add features that genuinely improve the platform.
+
+---
+
+# 19. DESIGN SYSTEM & VISUAL CREATIVE DIRECTION
+
+The application should look premium, elegant, timeless, and professionally designed.
+
+Avoid an excessively futuristic, flashy, aggressive, or colorful appearance.
+
+## 19.1. Overall aesthetic
+
+Use:
+
+- Refined typography
+- Consistent spacing
+- Clear information hierarchy
+- Thoughtful layouts
+- Carefully selected colors
+- Subtle shadows
+- Controlled glass effects
+- Purposeful visual contrast
+- High-quality iconography
+- Balanced negative space
+
+The visual identity should communicate intelligence, education, reliability, and sophistication.
+
+## 19.2. Avoid repetitive panels
+
+Do not make every section look like a grid of identical rounded rectangles.
+
+Use different compositions where they improve usability:
+
+- Bento layouts
+- Large featured information areas
+- Split layouts
+- Data visualizations
+- Interactive maps
+- Timelines
+- Compact lists
+- Contextual side panels
+- Structured tables
+- Carefully designed detail pages
+
+Each layout must match the information it presents.
+
+## 19.3. Glass effects
+
+Use glassmorphism selectively.
+
+Appropriate locations may include:
+
+- Floating navigation controls
+- Modal overlays
+- Small contextual panels
+- Selected interactive controls
+
+Avoid excessive blur, transparency, or layered glass cards.
+
+Text must always remain readable.
+
+## 19.4. Typography
+
+Create a consistent typographic hierarchy.
+
+Ensure:
+
+- Headings are distinguishable.
+- Body text is comfortable to read.
+- Secondary information is not too faint.
+- Numbers are easy to scan.
+- Tables remain readable.
+- Long descriptions have appropriate line length.
+
+Do not use unnecessarily large headings or excessive bold text.
+
+## 19.5. Responsive design
+
+Test:
+
+- Desktop
+- Laptop
+- Tablet
+- Mobile
+
+Do not simply shrink the desktop interface.
+
+Reorganize layouts appropriately for smaller screens.
+
+Avoid horizontal overflow, inaccessible controls, and broken navigation.
+
+---
+
+# 20. MULTILINGUAL CONSISTENCY
+
+Inspect the existing localization architecture.
+
+All currently supported languages must work consistently across the entire application.
+
+This includes:
+
+- Sidebar
+- Headers
+- Buttons
+- Forms
+- Notifications
+- Modals
+- Empty states
+- Error messages
+- AI interface
+- Agent descriptions
+- Audio Guide
+- Subscription plans
+- Academic Roadmap
+- Routine
+- To-Do List
+- Habits Tracker
+- Settings
+
+Do not leave important interface text untranslated.
+
+Avoid hardcoding text directly into components when the project already uses a localization system.
+
+Use consistent terminology across all languages.
+
+AI responses should follow the language selected by the user unless the user explicitly requests another language.
+
+---
+
+# 21. APPLICATION DATA AND MODULE INTEGRATION
+
+All major sections should work together through a consistent data architecture.
+
+The following relationships should be supported where relevant:
+
+**University Discovery → My Universities → Comparison**
+
+**University Research → Scholarship Research → Academic Roadmap**
+
+**Academic Roadmap → Routine → To-Do List**
+
+**Routine → Habits Tracker**
+
+**Research Library → AI Maslahatchi → Academic Roadmap**
+
+**Scholarship Research → Financial Planner**
+
+**All relevant modules → AI Maslahatchi**
+
+**Audio Guide → Application Navigation**
+
+Avoid isolated features that cannot communicate with the rest of the platform.
+
+Use clear data ownership.
+
+For example:
+
+- A user-created task belongs to the task system.
+- An academic milestone belongs to the roadmap.
+- A habit record belongs to Habits Tracker.
+- A recommendation remains an AI suggestion until accepted.
+
+Synchronization must not create duplicate records or overwrite user changes.
+
+---
+
+# 22. TECHNICAL ARCHITECTURE AND CODE QUALITY
+
+Use the existing technology stack unless there is a compelling reason to change it.
+
+Do not introduce a new framework simply for convenience.
+
+## 22.1. Code organization
+
+Maintain clear separation between:
+
+- UI components
+- Business logic
+- API clients
+- Database operations
+- AI orchestration
+- Agent definitions
+- State management
+- Validation
+- Localization
+- Theme tokens
+- Application navigation
+
+Avoid placing the entire application in one enormous component.
+
+## 22.2. API reliability
+
+For external and internal APIs, implement appropriate:
+
+- Request validation
+- Response validation
+- Error handling
+- Loading states
+- Timeouts
+- Retry policies
+- Permission checks
+- Logging
+
+Never expose server secrets in browser code.
+
+## 22.3. State consistency
+
+Use the existing state-management approach wherever possible.
+
+Avoid creating multiple competing sources of truth.
+
+Ensure that important user changes are persisted through the correct data layer.
+
+Handle:
+
+- Empty data
+- Missing data
+- Corrupted local preferences
+- Expired sessions
+- Network interruptions
+- Failed AI requests
+- Concurrent updates
+
+## 22.4. Performance
+
+Inspect expensive components.
+
+Optimize:
+
+- Large lists
+- University datasets
+- Interactive maps
+- Charts
+- AI chat history
+- File previews
+- Animation rendering
+
+Use lazy loading and virtualization where appropriate.
+
+Avoid unnecessary dependencies.
+
+Do not sacrifice maintainability for marginal performance gains.
+
+---
+
+# 23. ACCESSIBILITY AND USABILITY
+
+The application must be usable by people with different interaction needs.
+
+Implement appropriate:
+
+- Keyboard navigation
+- Focus indicators
+- Semantic HTML
+- Accessible labels
+- Readable contrast
+- Screen-reader support
+- Form validation messages
+- Reduced-motion behavior
+- Clear error feedback
+
+Interactive maps must have an alternative way to access important information.
+
+Do not rely exclusively on color to communicate completion or status.
+
+---
+
+# 24. QUALITY ASSURANCE — REQUIRED TESTING
+
+Do not consider the transformation complete simply because the application looks visually improved.
+
+Test the actual functionality.
+
+## 24.1. Existing functionality tests
+
+Verify:
+
+- University search
+- Country search
+- City discovery
+- University details
+- Rankings
+- Scholarships
+- Saved universities
+- Comparison
+- Existing maps
+- Existing profile information
+- Existing AI functionality
+
+## 24.2. New feature tests
+
+Verify:
+
+- Agent selection
+- Agent orchestration
+- Agent task execution
+- Academic Roadmap generation
+- Route switching
+- Milestone updates
+- Routine generation
+- Routine editing
+- Task recommendations
+- Task acceptance and rejection
+- Habits Tracker interactions
+- AI Maslahatchi actions
+- Audio Guide permissions
+- Voice navigation
+- Theme switching
+- Subscription permissions
+- Data persistence
+
+## 24.3. Cross-module tests
+
+Test realistic workflows.
+
+Example:
+
+1. User selects a target university.
+2. University Scout analyzes the university.
+3. Scholarship Agent identifies relevant funding opportunities.
+4. Academic Cartographer creates a suitable pathway.
+5. Routine Agent recommends preparation activities.
+6. Task Agent creates relevant suggestions.
+7. User accepts selected tasks.
+8. Habits Tracker supports the user's preparation routine.
+9. AI Maslahatchi explains progress.
+
+Verify that data remains consistent throughout this process.
+
+## 24.4. Visual tests
+
+Inspect all major sections in:
+
+- Dark Mode
+- Light Mode
+- Desktop
+- Tablet
+- Mobile
+
+Check for:
+
+- Broken layouts
+- Overflow
+- Incorrect colors
+- Invisible icons
+- Inconsistent spacing
+- Overlapping elements
+- Broken animations
+- Poor contrast
+- Unreadable text
+
+## 24.5. Error tests
+
+Verify that:
+
+- Failed API requests do not crash the application.
+- Missing data does not break layouts.
+- Unavailable voice APIs have a fallback.
+- Failed AI operations are reported honestly.
+- Unauthorized actions are blocked.
+- Subscription limits are enforced correctly.
+- User data is not accidentally overwritten.
+
+Fix discovered errors before declaring completion.
+
+---
+
+# 25. IMPLEMENTATION PRIORITIES
+
+Do not attempt to make every change simultaneously without validation.
+
+Use the following internal implementation sequence.
+
+### PHASE 1 — AUDIT AND PROTECTION
+
+- Inspect the application.
+- Understand the existing architecture.
+- Identify working features.
+- Identify broken functionality.
+- Verify existing integrations.
+- Establish safe checkpoints.
+- Prepare the implementation plan.
+
+### PHASE 2 — FOUNDATION
+
+- Improve architecture where necessary.
+- Establish consistent theme tokens.
+- Improve localization.
+- Improve shared UI components.
+- Fix existing navigation and layout problems.
+- Establish data and permission boundaries.
+
+### PHASE 3 — CORE PRODUCT MODULES
+
+- Improve Academic Roadmap.
+- Implement Routine.
+- Implement To-Do List.
+- Redesign Habits Tracker.
+- Improve Research Library integration.
+- Improve Financial Planner.
+
+### PHASE 4 — AI ECOSYSTEM
+
+- Establish central orchestration.
+- Implement the ten specialized agents.
+- Connect agents to relevant modules.
+- Improve AI Maslahatchi.
+- Implement action permissions.
+- Implement execution tracking.
+
+### PHASE 5 — AUDIO GUIDE
+
+- Implement the header control.
+- Implement speech recognition where supported.
+- Implement spoken responses.
+- Connect semantic navigation.
+- Add text fallback.
+- Test permission and error handling.
+
+### PHASE 6 — SUBSCRIPTIONS AND ACCOUNT
+
+- Implement centralized entitlements.
+- Improve plan comparison.
+- Add clear usage indicators.
+- Integrate existing billing where available.
+- Add the About section.
+- Improve Settings.
+
+### PHASE 7 — VISUAL POLISH
+
+- Improve animations.
+- Refine panel geometry.
+- Polish responsive layouts.
+- Improve Light Mode.
+- Polish Dark Mode.
+- Verify visual consistency.
+
+### PHASE 8 — FINAL VALIDATION
+
+- Test every affected module.
+- Test existing functionality.
+- Test cross-module workflows.
+- Test themes.
+- Test responsive layouts.
+- Verify data preservation.
+- Resolve critical errors.
+- Prepare final implementation report.
+
+These phases are an internal execution strategy. Do not stop after writing a plan: implement the approved, safe changes and verify them.
+
+---
+
+# 26. FINAL ACCEPTANCE CRITERIA
+
+The application can be considered successfully upgraded only when the following conditions are satisfied.
+
+**PRODUCT**
+
+- Existing sections remain functional.
+- Navigation is clearer.
+- New modules have meaningful purposes.
+- The application feels like one coherent ecosystem.
+
+**AI**
+
+- Ten specialized agents have distinct responsibilities.
+- Agents operate through a coordinated architecture.
+- AI Maslahatchi understands application context.
+- Actions are permission-controlled.
+- Execution results are truthful.
+
+**ACADEMIC ROADMAP**
+
+- The map is genuinely interactive.
+- Routes are visually meaningful.
+- Milestones can be inspected.
+- Progress is understandable.
+- Information is not fabricated.
+
+**PRODUCTIVITY**
+
+- Routine supports four planning horizons.
+- To-Do List separates recommendations from accepted tasks.
+- Habits Tracker preserves existing records.
+- User edits take precedence over AI suggestions.
+
+**AUDIO GUIDE**
+
+- Uses the selected language.
+- Supports voice interaction where available.
+- Navigates through semantic application actions.
+- Provides useful fallback behavior.
+- Does not simulate unsupported functionality.
+
+**DESIGN**
+
+- Light Mode and Dark Mode are complete.
+- Logo and icons work in both themes.
+- Animations are purposeful and performant.
+- Panels are not monotonously repetitive.
+- Desktop and mobile experiences are polished.
+
+**SUBSCRIPTIONS**
+
+- Three understandable plans exist.
+- Free remains useful.
+- Middle tier offers the strongest balance.
+- Highest tier has meaningful advanced value.
+- Entitlements are enforced through the correct backend.
+- Prices and quotas are not fabricated.
+
+**RELIABILITY**
+
+- Existing data is preserved.
+- Authentication remains secure.
+- API keys remain protected.
+- Important actions are tested.
+- No major existing feature is broken.
+
+---
+
+# 27. FINAL IMPLEMENTATION REPORT
+
+After implementation, provide a concise but complete report containing:
+
+1. Existing application structure inspected.
+2. Sections improved.
+3. Sections added.
+4. Existing sections renamed.
+5. AI agents implemented.
+6. Agent-to-module connections.
+7. Academic Roadmap improvements.
+8. Routine and To-Do functionality.
+9. Habits Tracker changes.
+10. AI Maslahatchi improvements.
+11. Audio Guide implementation status.
+12. Light and Dark Mode improvements.
+13. Subscription architecture changes.
+14. Database or API changes.
+15. Security improvements.
+16. Tests performed.
+17. Known limitations.
+18. Integrations requiring additional configuration.
+19. Features that could not be implemented.
+20. Any remaining risks.
+
+Clearly distinguish between:
+
+- Fully implemented and tested
+- Implemented but not fully tested
+- Partially implemented
+- Blocked by missing integration or credentials
+- Not implemented
+
+Never claim that a feature is complete when it has not been verified.
+
+---
+
+# FINAL DIRECTIVE
+
+Transform Global University Intelligence into an elegant, reliable, intelligent academic platform.
+
+Do not prioritize the number of new features.
+
+Prioritize the quality of the experience, the reliability of the architecture, the accuracy of information, the usefulness of AI, and the consistency of the entire application.
+
+Preserve everything that already works.
+
+Improve what is weak.
+
+Add only what is genuinely valuable.
+
+Build each feature as part of one connected ecosystem.
+
+**The final result should not merely look like a premium educational platform. It must actually function like one.**

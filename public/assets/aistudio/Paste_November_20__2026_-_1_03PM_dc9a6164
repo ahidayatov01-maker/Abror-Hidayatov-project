@@ -1,0 +1,1776 @@
+# MASTER PROMPT — MAQSADLAR
+## GLOBAL GOALS INTELLIGENCE, INTERNATIONAL CERTIFICATION DATABASE, COUNTRY VALUE SIMULATOR & AI-POWERED PERSONAL ACHIEVEMENT ECOSYSTEM
+
+---
+
+# 1. ROLE & PRIMARY MISSION
+
+Act as a Principal Product Architect, Senior Full-Stack Engineer, AI Systems Architect, International Education Research Specialist, UX/UI Creative Director, and Database Architect.
+
+Your mission is to introduce a comprehensive new module called **MAQSADLAR** into the existing **Global University Intelligence** platform.
+
+This is a major expansion of an existing application, NOT a standalone application or a complete rewrite.
+
+The new module must become the central place where users can:
+
+- Discover international certificates and examinations.
+- Understand the real value of qualifications in different countries.
+- Compare educational and career opportunities.
+- Create personal academic and professional goals.
+- Establish measurable achievement targets.
+- Track progress toward specific dates.
+- Receive AI-generated preparation strategies.
+- Synchronize approved plans with AI Routine, To-Do List, Habits Tracker, and Akademik yo'lim.
+
+The central philosophy:
+
+**DISCOVER → UNDERSTAND → SET GOALS → BUILD A STRATEGY → EXECUTE → MEASURE → ACHIEVE.**
+
+Do not build a collection of disconnected features.
+
+Build one coherent intelligence system.
+
+# 2. CRITICAL EXISTING PROJECT PROTECTION
+
+Before implementation, inspect the existing Global University Intelligence application.
+
+Understand:
+
+- Existing framework and architecture.
+- Sidebar and navigation structure.
+- Existing 10-Agent AI architecture.
+- AI Routine.
+- To-Do List.
+- Habits Tracker / PAPER Kundalik.
+- Akademik yo'lim.
+- Research Library.
+- Financial Planner.
+- Authentication.
+- Database.
+- State management.
+- Localization.
+- Subscription and entitlement architecture.
+- Existing API integrations.
+- Current Dark and Light themes.
+
+Strict requirements:
+
+1. Preserve all existing user data.
+2. Do not replace the database with localStorage.
+3. Use existing persistence architecture for permanent goal records.
+4. Use localStorage only for appropriate lightweight preferences, drafts, or temporary client-side state.
+5. Never overwrite existing tasks, habits, routines, or academic milestones without permission.
+6. Reuse existing components and integrations wherever possible.
+7. Do not create duplicate functionality.
+8. Do not create fake AI results or fake certificate information.
+9. Do not expose API keys or private credentials.
+10. Use backward-compatible database migrations.
+
+If a required integration does not exist, implement a clearly identified integration boundary rather than pretending that it works.
+
+# 3. SIDEBAR INTEGRATION
+
+Add the new section:
+
+**Maqsadlar**
+
+Location:
+
+SHAXSIY MAKON VA AI
+
+Place it immediately ABOVE:
+
+Akademik yo'lim
+
+Use:
+
+- An appropriate target or flag-style icon.
+- A clear active navigation state.
+- Consistent typography.
+- The existing sidebar spacing.
+- Subtle hover and entrance transitions.
+
+Do not redesign the entire sidebar unnecessarily.
+
+The section must feel like a native part of Global University Intelligence.
+
+# 4. COMPLETE MAQSADLAR MODULE ARCHITECTURE
+
+Organize the page into five interconnected areas:
+
+1. Global Certificate Explorer.
+2. Country Value & Opportunity Simulator.
+3. Personal Goals Workspace.
+4. AI Goal Strategist.
+5. Goals Analytics & Achievement Intelligence.
+
+Use a clean navigation system within the page.
+
+Suggested internal navigation:
+
+- Umumiy ko'rinish
+- Sertifikatlar
+- Davlatlar bo'yicha qiymati
+- Mening maqsadlarim
+- Tahlil va statistika
+
+Avoid excessive tabs, nested navigation, and unnecessary controls.
+
+The main page should immediately communicate three things:
+
+- What the user wants to achieve.
+- How much progress has been made.
+- What the next important action should be.
+
+# 5. GLOBAL CERTIFICATE & EXAMINATION EXPLORER
+
+## 5.1. Core concept
+
+Create a comprehensive international examination and certification database.
+
+It should be searchable, filterable, categorized, expandable, and connected directly to the user's personal goals.
+
+The architecture should support 100+ certificates and examinations as the database expands.
+
+Do not fabricate entries simply to reach the number 100.
+
+Only show certificates that have meaningful, identifiable information.
+
+## 5.2. Main categories
+
+Create the following primary categories.
+
+### CATEGORY A — TILLAR
+
+Support international language examinations.
+
+**English**
+
+- IELTS Academic
+- IELTS General Training
+- TOEFL iBT
+- Duolingo English Test
+- Cambridge C2 Proficiency
+- Cambridge C1 Advanced
+- Cambridge B2 First
+- Cambridge B1 Preliminary
+- PTE Academic
+- TOEIC
+
+**Japanese**
+
+- JLPT N5
+- JLPT N4
+- JLPT N3
+- JLPT N2
+- JLPT N1
+- EJU
+- J-TEST
+- NAT-TEST
+- BJT
+
+**Korean**
+
+- TOPIK I
+- TOPIK II
+- EPS-TOPIK
+- KLAT
+
+**Chinese**
+
+- HSK Levels 1–9
+- HSKK
+- BCT
+
+**German**
+
+- Goethe-Zertifikat A1–C2
+- TestDaF
+- DSH
+- telc Deutsch
+- ÖSD
+
+**French**
+
+- DELF A1–B2
+- DALF C1–C2
+- TCF
+- TEF
+
+**Spanish**
+
+- DELE
+- SIELE
+
+**Italian**
+
+- CILS
+- CELI
+
+**Russian**
+
+- TORFL / TRKI
+
+**Turkish**
+
+- TÖMER
+
+**Arabic**
+
+- ALPT
+
+**Uzbekistan**
+
+- CEFR National Multi-Level Certificate
+- Other officially recognized national language examinations where applicable.
+
+### CATEGORY B — MATEMATIKA VA FANLAR
+
+International academic examinations and standardized assessments.
+
+- Digital SAT
+- SAT Math
+- SAT Evidence-Based Reading and Writing
+- ACT
+- AP Calculus AB
+- AP Calculus BC
+- AP Physics
+- AP Computer Science A
+- AP Computer Science Principles
+- IB Diploma Programme
+- A-Level Mathematics
+- A-Level Further Mathematics
+- A-Level Physics
+- A-Level Computer Science
+- GMAT
+- GRE
+- International Mathematical Olympiad
+- International Physics Olympiad
+- International Olympiad in Informatics
+
+**Uzbekistan Milliy Sertifikati**
+
+- Matematika
+- Fizika
+- Kimyo
+- Biologiya
+- Tarix
+- Ona tili va adabiyot
+- Other officially available subjects.
+
+### CATEGORY C — IT & TECHNOLOGY
+
+- AWS Certified Solutions Architect
+- AWS Certified Developer
+- AWS Certified Cloud Practitioner
+- Microsoft Azure Certifications
+- Google Cloud Certifications
+- Cisco CCNA
+- Cisco CCNP
+- CompTIA A+
+- CompTIA Network+
+- CompTIA Security+
+- CompTIA Linux+
+- Oracle Certifications
+- Red Hat Certifications
+- Linux Professional Institute Certifications
+
+### CATEGORY D — BUSINESS & PROFESSIONAL
+
+- CFA
+- PMP
+- CAPM
+- Scrum Certifications
+- ACCA
+- CPA
+- CMA
+- CIMA
+- Other recognized professional qualifications.
+
+### CATEGORY E — OTHER INTERNATIONAL QUALIFICATIONS
+
+Provide an extensible category for:
+
+- Academic competitions.
+- International olympiads.
+- Research qualifications.
+- Specialized professional examinations.
+- Other officially recognized credentials.
+
+## 5.3. Certificate database structure
+
+Every certificate must have a structured record.
+
+Required fields:
+
+- Unique certificate ID.
+- Official name.
+- Short name.
+- Category.
+- Subcategory.
+- Language or subject.
+- Issuing organization.
+- Official website.
+- Examination format.
+- Available levels.
+- Minimum score.
+- Maximum score.
+- Passing requirements, if applicable.
+- Score interpretation.
+- Validity period.
+- Approximate examination fee.
+- Currency.
+- Country or region availability.
+- Examination frequency.
+- Registration information.
+- Official preparation resources.
+- Last verified date.
+- Information source.
+- Information reliability status.
+
+Important:
+
+Not every examination has the same scoring system.
+
+Examples:
+
+IELTS: 0–9 band scale.
+
+JLPT: N5–N1 levels, with examination-specific scoring and passing requirements.
+
+SAT: 400–1600 total score.
+
+TOPIK: Different score structures for TOPIK I and II.
+
+AWS and professional certifications: Different examination-specific passing and validity rules.
+
+Never force every certificate into one generic scoring model.
+
+Support:
+
+- Numeric scores.
+- Levels.
+- Pass/Fail.
+- Grades.
+- Awards.
+- Multiple score components.
+
+## 5.4. Validity and examination fees
+
+Display examination validity and approximate fees.
+
+However:
+
+- Validity must reflect the actual issuing organization's policy.
+- Fees must be geographically appropriate.
+- Fees may differ by examination center.
+- Currency must be visible.
+- Show when the fee was last verified.
+- Clearly mark estimates.
+- Never present outdated prices as current verified prices.
+
+If information cannot be verified, display:
+
+"Ma'lumot tasdiqlanmagan."
+
+## 5.5. Explorer interface
+
+At the top, create:
+
+- Large search field.
+- Category selector.
+- Language selector where relevant.
+- Country availability filter.
+- Examination type filter.
+- Score format filter.
+- Sort by popularity.
+- Sort by examination fee.
+- Sort by validity.
+- Recently viewed certificates.
+- Favorites.
+
+Each certificate card should contain:
+
+1. Official certificate name.
+2. Issuing organization.
+3. Main category.
+4. Score format.
+5. Validity.
+6. Approximate fee.
+7. Official source.
+8. Last verification date.
+
+Primary action:
+
+**+ Maqsad sifatida qo'shish**
+
+Secondary actions:
+
+- Batafsil.
+- Taqqoslash.
+- Saqlash.
+- Rasmiy sayt.
+
+When adding a certificate as a goal, automatically prefill relevant fields in the goal creation interface.
+
+Do not create duplicate goals if the user has already added the same certificate.
+
+# 6. COUNTRY VALUE & OPPORTUNITY SIMULATOR
+
+## 6.1. Main purpose
+
+Create a powerful interactive feature named:
+
+**Sertifikat Qiymati va Imkoniyatlar Simulyatori**
+
+Subtitle:
+
+"Bir xil sertifikat turli mamlakatlarda qanday imkoniyatlar ochadi?"
+
+The purpose is to explain the practical educational and professional value of qualifications in different countries.
+
+The simulator must distinguish between:
+
+- University admission.
+- Employment opportunities.
+- Scholarships.
+- Immigration and visa requirements.
+- Professional recognition.
+
+These are different systems and must never be combined into one misleading score.
+
+## 6.2. Country selection
+
+Initially support:
+
+- Japan.
+- Germany.
+- South Korea.
+- United States.
+- United Kingdom.
+- Canada.
+- Australia.
+- Uzbekistan.
+- United Arab Emirates.
+- France.
+- Italy.
+- China.
+- Singapore.
+- Other countries through an extensible country database.
+
+Provide:
+
+- Country search.
+- Country selector.
+- Country comparison.
+- Country-specific qualification requirements.
+
+## 6.3. Multi-certificate combination
+
+Allow users to select multiple certificates simultaneously.
+
+Example:
+
+Target Country: Japan
+
+Qualifications:
+
+- JLPT N2.
+- IELTS 6.5.
+- SAT 1450+.
+- Relevant programming portfolio.
+
+Another example:
+
+Target Country: Germany
+
+Qualifications:
+
+- Goethe C1.
+- IELTS 7.0.
+- Mathematics qualification.
+- Relevant academic results.
+
+Users must be able to enter their actual or target scores.
+
+The simulator must distinguish:
+
+- Current score.
+- Target score.
+- Already obtained qualification.
+- Planned qualification.
+
+## 6.4. Three primary analysis cards
+
+After selection, generate three detailed analysis areas.
+
+### CARD 1 — UNIVERSITETGA KIRISH IMKONIYATI
+
+Analyze:
+
+- University admission requirements.
+- Language requirements.
+- Accepted examination types.
+- Required score thresholds.
+- English-taught programs.
+- Local-language programs.
+- Foundation or preparatory requirements.
+- Academic prerequisites.
+- Relevant university tiers.
+
+Where relevant, identify:
+
+- Highly selective universities.
+- Research universities.
+- Public universities.
+- Private universities.
+- Specialized institutions.
+
+For Japan, distinguish between Japanese-taught and English-taught degree programs.
+
+Do not assume that JLPT N2 is mandatory for every Japanese university.
+
+Do not assume that IELTS 6.5 or SAT 1450 automatically guarantees admission.
+
+Show actual requirements from official institutions whenever available.
+
+### CARD 2 — ISH VA KARYERA IMKONIYATLARI
+
+Analyze potential professional opportunities.
+
+Examples:
+
+Japan:
+
+- Software Engineering.
+- IT Support.
+- International Business.
+- Global Trading.
+- Technical Translation.
+- International Customer Support.
+- Research Assistance.
+- Other relevant professional sectors.
+
+Germany:
+
+- Software Development.
+- Engineering.
+- Research.
+- Technical Consulting.
+- International Business.
+
+South Korea:
+
+- Technology.
+- Software Engineering.
+- International Business.
+- Research.
+- Global Companies.
+
+United States:
+
+- Technology.
+- Research.
+- Business.
+- Specialized professional sectors.
+
+For every career opportunity, explain:
+
+- Relevant qualifications.
+- Language expectations.
+- Education requirements.
+- Experience requirements.
+- Professional licensing where relevant.
+- Whether the certificate is required, preferred, or merely supplementary.
+
+Important:
+
+A language certificate alone does not guarantee employment.
+
+JLPT N1 does not automatically grant a leadership position or a work visa.
+
+For student employment, explain country-specific work authorization and applicable restrictions separately.
+
+Do not present immigration or employment rules as guaranteed outcomes.
+
+### CARD 3 — STIPENDIYA, VIZA VA IMTIYOZLAR
+
+Analyze:
+
+- Scholarship eligibility.
+- Government scholarship programs.
+- University funding.
+- Tuition discounts.
+- Relevant visa categories.
+- Immigration qualification systems.
+- Additional eligibility conditions.
+
+Examples:
+
+Japan:
+
+- MEXT.
+- University scholarships.
+- Highly Skilled Professional points system.
+- Student residence status and relevant permissions.
+
+Germany:
+
+- DAAD.
+- University scholarships.
+- Relevant student residence conditions.
+
+South Korea:
+
+- GKS.
+- University scholarships.
+- Relevant admission and residence requirements.
+
+United States:
+
+- University financial aid.
+- Merit scholarships.
+- Relevant student visa requirements.
+
+Important:
+
+Do not award invented visa points.
+
+For Japan's Highly Skilled Professional system, calculate points only when all required personal and professional inputs are available and the current official scoring rules are verified.
+
+A language certificate must not automatically be interpreted as a visa benefit.
+
+## 6.5. Opportunity Matrix
+
+Add an interactive comparison table.
+
+Example structure:
+
+| Qualification | Japan | Germany | South Korea | USA |
+|---|---|---|---|---|
+| IELTS | Program-dependent | Program-dependent | Program-dependent | Program-dependent |
+| JLPT | Japanese-language programs | Limited direct relevance | Limited direct relevance | Program-dependent |
+| SAT | University-dependent | University-dependent | University-dependent | University-dependent |
+| Goethe C1 | Limited direct relevance | Relevant for German-language study | Limited direct relevance | Limited direct relevance |
+
+The table must be populated using real evidence.
+
+Do not treat the illustrative entries above as universal admission rules.
+
+## 6.6. Evidence-based results
+
+Every important result must have an information status:
+
+- Officially verified.
+- Institution-specific.
+- Estimated.
+- User-provided.
+- Requires confirmation.
+
+Show source links and last verification dates.
+
+When a requirement changes by university, show that variation instead of producing one universal answer.
+
+Add a clear warning that the simulator is an educational planning tool, not an official admission, employment, legal, or immigration decision service.
+
+# 7. PERSONAL GOALS WORKSPACE
+
+## 7.1. Core purpose
+
+This is the heart of the new section.
+
+Users should be able to create and manage any meaningful personal goal.
+
+Examples:
+
+- IELTS 7.5 olish.
+- JLPT N2 topshirish.
+- SAT 1500+ olish.
+- Goethe C1 olish.
+- Universitetga kirish.
+- MEXT stipendiyasini qo'lga kiritish.
+- Dasturlash portfolio yaratish.
+- Kitob o'qish maqsadi.
+- Shaxsiy rivojlanish.
+- Boshqa individual maqsadlar.
+
+Goals must not be restricted to certificates.
+
+## 7.2. Goal categories
+
+Provide:
+
+- Til sertifikatlari.
+- Matematika va fanlar.
+- Milliy sertifikatlar.
+- IT va professional sertifikatlar.
+- Universitet va stipendiyalar.
+- Dasturlash va texnologiya.
+- Shaxsiy rivojlanish.
+- Boshqa maqsadlar.
+
+Allow custom categories where appropriate.
+
+## 7.3. Create Goal interface
+
+Create a refined modal or dedicated creation panel.
+
+Required fields:
+
+**Goal Title**
+
+Manual entry or automatically filled from the certificate explorer.
+
+**Category**
+
+Select from existing categories.
+
+**Start Date**
+
+Boshlanish sanasi.
+
+**Target Date**
+
+Erishish sanasi.
+
+**Current Score / Progress**
+
+Current result or completion level.
+
+**Target Score / Result**
+
+Desired achievement.
+
+**Priority**
+
+- Past.
+- O'rta.
+- Yuqori.
+- Juda muhim.
+
+**Motivation Note**
+
+Why the user wants to achieve this goal.
+
+**Optional fields**
+
+- Target country.
+- Target university.
+- Related certificates.
+- Related academic roadmap milestone.
+- Estimated budget.
+- Study resources.
+- Personal notes.
+
+Do not make every optional field mandatory.
+
+## 7.4. Goal types
+
+Support different goal structures.
+
+### Type A — Score-based goals
+
+Example:
+
+IELTS:
+
+Current: 6.0
+
+Target: 7.5
+
+### Type B — Level-based goals
+
+Example:
+
+JLPT:
+
+Current: N4
+
+Target: N2
+
+Do not calculate level progress by assuming that Japanese proficiency levels are evenly spaced.
+
+### Type C — Binary goals
+
+Example:
+
+Complete a portfolio.
+
+Status:
+
+Not started / In progress / Achieved.
+
+### Type D — Quantitative goals
+
+Example:
+
+Complete 20 programming projects.
+
+Current: 6.
+
+Target: 20.
+
+### Type E — Milestone-based goals
+
+Example:
+
+Prepare for MEXT.
+
+Sub-milestones:
+
+- Research eligibility.
+- Improve language qualifications.
+- Prepare academic documents.
+- Complete examinations.
+- Prepare application materials.
+
+Support parent goals and sub-goals.
+
+## 7.5. Goal cards
+
+Create visually sophisticated goal cards.
+
+Each card must show:
+
+- Goal name.
+- Category.
+- Priority.
+- Current progress.
+- Current versus target score.
+- Start date.
+- Target date.
+- Remaining days.
+- Progress visualization.
+- Status.
+- Next recommended action.
+
+Example:
+
+IELTS 7.5
+
+Current: 6.0
+
+Target: 7.5
+
+Qolgan kunlar: 184 kun.
+
+Progress: calculated from the actual score or another clearly defined metric.
+
+Do not use random or hardcoded progress values.
+
+## 7.6. Dynamic status
+
+Support:
+
+- Rejalashtirilgan.
+- Jarayonda.
+- Yaqinlashmoqda.
+- Muddat o'tgan.
+- Erishildi.
+- To'xtatilgan.
+
+Status must be calculated from actual goal dates and completion conditions.
+
+An achieved goal must not become overdue simply because its target date has passed.
+
+For completed goals, display:
+
+**Erishildi ✓**
+
+Display the achievement date.
+
+## 7.7. Progress updates
+
+Users should be able to:
+
+- Edit their current score.
+- Change their target score.
+- Update progress.
+- Add achievement evidence.
+- Add notes.
+- Change priorities.
+- Pause a goal.
+- Resume a goal.
+- Archive a goal.
+- Mark a goal as achieved.
+
+Use sliders only when they make sense for the goal type.
+
+For categorical examinations such as JLPT, use a level selector rather than a misleading numeric slider.
+
+## 7.8. Goal timeline
+
+Provide a chronological timeline.
+
+Show:
+
+- Start.
+- Intermediate milestones.
+- Target date.
+- Current position.
+- Achievement.
+
+Support filtering by:
+
+- This week.
+- This month.
+- This year.
+- Upcoming.
+- Completed.
+- Overdue.
+
+Use accurate date calculations and the user's local timezone.
+
+# 8. GOAL DEPENDENCY & STRATEGIC GROUPING
+
+Introduce an important new capability:
+
+**Maqsadlar Strategiyasi — Goal Clusters.**
+
+Users should be able to group several goals into one larger objective.
+
+Example:
+
+MAIN OBJECTIVE:
+
+Japan — Kyutech Admission Preparation.
+
+Connected goals:
+
+1. IELTS 7.5.
+2. JLPT N2.
+3. SAT 1450+.
+4. Programming Portfolio.
+5. Mathematics Preparation.
+6. MEXT Application Preparation.
+
+Each goal has its own deadline and progress.
+
+The parent objective should summarize the progress of its child goals.
+
+However, do not calculate parent progress using a simple average when goals have different importance.
+
+Allow optional weights.
+
+For example:
+
+- IELTS: 20%.
+- JLPT: 15%.
+- SAT: 25%.
+- Programming Portfolio: 15%.
+- Mathematics: 15%.
+- MEXT Preparation: 10%.
+
+These are illustrative values, not default mandatory weights.
+
+The user should be able to modify them.
+
+Provide:
+
+- Goal dependency visualization.
+- Related-goal connections.
+- Shared deadlines.
+- Conflicting deadlines detection.
+- Dependency warnings.
+- Overall strategy progress.
+
+If one goal depends on another, explain the dependency.
+
+# 9. AI GOAL STRATEGIST
+
+## 9.1. Main action
+
+Every goal must include a primary action:
+
+**AI bilan erishish rejasini tuzish**
+
+This activates the existing AI agent ecosystem.
+
+Do not introduce an eleventh specialized agent.
+
+Use the existing agents according to their responsibilities.
+
+## 9.2. Agent responsibility mapping
+
+**Agent 3 — Admission Profile Auditor**
+
+Analyzes examination requirements and missing qualifications.
+
+**Agent 5 — Academic Cartographer**
+
+Connects goals to Akademik yo'lim and creates milestone suggestions.
+
+**Agent 6 — Smart Routine Architect**
+
+Calculates a realistic preparation schedule.
+
+**Agent 7 — Task & Priority Orchestrator**
+
+Creates preparation task suggestions.
+
+**Agent 8 — Habit & Consistency Coach**
+
+Recommends suitable daily or weekly habits.
+
+**Agent 2 — Scholarship & Grant Hunter**
+
+Analyzes scholarship-related goals.
+
+**Agent 9 — Tuition & Living Cost Analyst**
+
+Estimates relevant preparation or examination expenses where appropriate.
+
+The central AI orchestrator coordinates them.
+
+## 9.3. Preparation analysis
+
+For each goal, analyze:
+
+- Current level.
+- Target level.
+- Remaining time.
+- Examination date.
+- Available study time.
+- Current routine.
+- Existing tasks.
+- Related habits.
+- Learning materials.
+- Goal difficulty.
+- Required skills.
+- Potential obstacles.
+
+If critical information is missing, ask a concise clarification.
+
+Never invent the user's available study hours or current academic level.
+
+## 9.4. Preparation plan
+
+Generate:
+
+1. Goal analysis.
+2. Current-position assessment.
+3. Required preparation stages.
+4. Weekly targets.
+5. Monthly milestones.
+6. Suggested daily study allocation.
+7. Review sessions.
+8. Practice recommendations.
+9. Progress checkpoints.
+10. Alternative strategy if progress is slower than expected.
+
+Estimate study hours only when enough information is available.
+
+Do not promise that a particular number of hours guarantees a particular examination result.
+
+Use realistic schedules that preserve sleep, breaks, school obligations, and personal time.
+
+## 9.5. One-click ecosystem synchronization
+
+After generating a plan, show a reviewable action panel.
+
+Available actions:
+
+**1. AI Routine'ga qo'shish**
+
+Create proposed study blocks.
+
+**2. To-Do List'ga qo'shish**
+
+Create actionable preparation tasks.
+
+**3. Habits Tracker'ga qo'shish**
+
+Suggest a daily or weekly practice habit.
+
+**4. Akademik yo'limga bog'lash**
+
+Connect the goal to the appropriate academic milestone.
+
+**5. Research Library'dan material topish**
+
+Search existing learning resources.
+
+Important implementation rules:
+
+- Preview proposed changes before applying.
+- Allow selective acceptance.
+- Avoid duplicate tasks and habits.
+- Preserve existing schedules.
+- Do not overwrite locked routine blocks.
+- Never modify user-created content without authorization.
+- Record successful synchronization.
+- Show a confirmation only after the relevant operation succeeds.
+
+# 10. SMART AI RECOMMENDATIONS
+
+Introduce a compact panel:
+
+**Bugungi eng muhim qadam**
+
+The AI system should identify the single most useful next action across active goals.
+
+Example:
+
+"Bugun IELTS Reading bo'yicha bitta timed practice bajarish."
+
+Also provide:
+
+**Keyingi 7 kun**
+
+A short weekly overview containing:
+
+- Upcoming goal deadlines.
+- Most important preparation activities.
+- At-risk milestones.
+- Suggested reviews.
+- Potential scheduling conflicts.
+
+Do not overload the dashboard with dozens of recommendations.
+
+Prioritize relevance over quantity.
+
+# 11. GOAL ANALYTICS & ACHIEVEMENT INTELLIGENCE
+
+Create a dedicated analytics area.
+
+Track actual data:
+
+- Total goals.
+- Active goals.
+- Achieved goals.
+- Overdue goals.
+- Upcoming deadlines.
+- Average progress where mathematically meaningful.
+- Progress over time.
+- Category distribution.
+- Monthly achievements.
+- Goal completion history.
+
+Introduce a visual achievement timeline.
+
+Allow users to review previous achievements.
+
+## 11.1. Deadline risk analysis
+
+Detect when a goal may be at risk.
+
+Possible reasons:
+
+- Little progress despite a nearby deadline.
+- Missing prerequisite.
+- Conflicting examination dates.
+- Insufficient preparation time.
+- Incomplete required tasks.
+
+Show a clear explanation.
+
+Do not label a goal as failing simply because the user has missed a few study sessions.
+
+Recommendations must be supportive and actionable.
+
+## 11.2. Achievement milestones
+
+Introduce milestone celebrations.
+
+Examples:
+
+- First goal created.
+- First 25% progress.
+- Halfway completed.
+- Target reached.
+- Multiple goals achieved.
+
+Use subtle, premium animations.
+
+Do not use excessive gamification or distracting effects.
+
+Optional achievement badges can be included if they do not clutter the interface.
+
+# 12. CERTIFICATE COMPARISON
+
+Add a dedicated comparison function.
+
+Users can compare multiple examinations side by side.
+
+Compare:
+
+- Issuing organization.
+- Examination purpose.
+- Score structure.
+- Validity.
+- Approximate fee.
+- Accepted countries.
+- University relevance.
+- Career relevance.
+- Preparation requirements.
+- Official registration links.
+
+Example:
+
+IELTS vs TOEFL iBT vs DET.
+
+JLPT N2 vs TOPIK Level 5.
+
+SAT vs ACT.
+
+The comparison must explain important differences, not merely display numbers.
+
+Never assume that two examinations are interchangeable.
+
+# 13. SMART CERTIFICATE RECOMMENDATIONS
+
+Introduce:
+
+**Qaysi sertifikat menga kerak?**
+
+Users can request an analysis based on:
+
+- Target country.
+- Target university.
+- Intended degree.
+- Study language.
+- Intended career.
+- Current qualifications.
+- Target admission year.
+
+The AI system should identify:
+
+1. Required examinations.
+2. Recommended examinations.
+3. Optional additional qualifications.
+4. Unnecessary examinations.
+5. Recommended order of preparation.
+
+This feature is especially important.
+
+The application should help users avoid spending money and time on certificates that do not contribute meaningfully to their actual objectives.
+
+For example, if a selected university does not require JLPT for its English-taught program, explain that clearly.
+
+Do not recommend certificates merely because they are popular.
+
+# 14. RESEARCH LIBRARY CONNECTION
+
+Connect the Certificate Explorer and Goals Workspace to the existing Research Library.
+
+Users should be able to associate:
+
+- Official examination guides.
+- Preparation books.
+- Practice tests.
+- University requirements.
+- Scholarship documents.
+- Study materials.
+- Personal notes.
+
+AI may analyze accessible materials.
+
+For example:
+
+A user adds an IELTS preparation book.
+
+The system may suggest connecting it to the IELTS 7.5 goal.
+
+A user adds an official university admission guide.
+
+The system may identify relevant language and academic requirements.
+
+Do not claim to analyze inaccessible files.
+
+# 15. SUBSCRIPTION INTEGRATION
+
+Integrate the new section with the existing three-tier subscription architecture.
+
+Preserve established plan names if they already exist.
+
+## FREE EXPLORER
+
+- Full basic Certificate Explorer.
+- Basic certificate information.
+- Basic country-value lookup.
+- Up to 3 active personal goals.
+- Basic goal progress tracking.
+- Manual goal management.
+- Basic goal analytics.
+
+Completed and archived goals should not consume active-goal quota.
+
+## SCHOLAR PLUS
+
+- Everything in Free Explorer.
+- Unlimited or substantially expanded goals according to configured entitlement.
+- Advanced certificate comparison.
+- Multi-certificate combinations.
+- Expanded country simulator.
+- AI Goal Strategist.
+- AI-generated preparation plans.
+- Routine synchronization.
+- To-Do List synchronization.
+- Habit suggestions.
+- Goal dependency management.
+- Expanded analytics.
+
+## GLOBAL ELITE PRO
+
+- Everything in Scholar Plus.
+- Advanced multi-country comparisons.
+- Advanced goal-cluster analysis.
+- More extensive AI research.
+- Advanced deadline-risk analysis.
+- Multiple strategic pathways.
+- Expanded AI synchronization.
+- Advanced achievement analytics.
+- Exportable goal plans.
+- Priority processing where technically supported.
+
+Important:
+
+Do not hardcode plan restrictions inside individual frontend components.
+
+Use the existing centralized entitlement system.
+
+Enforce permissions server-side.
+
+Do not implement fake upgrade or payment actions.
+
+If exact pricing is unavailable, preserve configurable pricing placeholders.
+
+# 16. DATA ARCHITECTURE
+
+Create a modular data model compatible with the existing database.
+
+Suggested entities:
+
+**Certificate**
+
+- id
+- officialName
+- abbreviation
+- category
+- issuer
+- scoringModel
+- validity
+- feeInformation
+- officialUrl
+- verificationStatus
+- lastVerifiedAt
+
+**Goal**
+
+- id
+- userId
+- title
+- description
+- category
+- goalType
+- certificateId
+- startDate
+- targetDate
+- currentValue
+- targetValue
+- progress
+- priority
+- status
+- motivation
+- createdAt
+- updatedAt
+- achievedAt
+
+**GoalGroup**
+
+- id
+- userId
+- title
+- description
+- targetDate
+- priority
+
+**GoalDependency**
+
+- parentGoalId
+- childGoalId
+- dependencyType
+- optionalWeight
+
+**GoalMilestone**
+
+- id
+- goalId
+- title
+- description
+- targetDate
+- status
+
+**GoalPlan**
+
+- id
+- goalId
+- generatedBy
+- strategy
+- weeklyTargets
+- dailyRecommendations
+- status
+- createdAt
+
+**GoalEvidence**
+
+- id
+- goalId
+- fileReference
+- evidenceType
+- description
+- createdAt
+
+**CountryQualificationRule**
+
+- id
+- countryId
+- certificateId
+- opportunityType
+- requirement
+- applicability
+- officialSource
+- lastVerifiedAt
+
+These are conceptual schemas.
+
+Adapt them to the actual database technology and existing naming conventions.
+
+Avoid creating unnecessary duplicate tables.
+
+Use appropriate indexes, relationships, validation, and access control.
+
+Users must only access their own private goals and associated personal information.
+
+# 17. DESIGN & CREATIVE DIRECTION
+
+The new section must match the existing Global University Intelligence design system.
+
+Do not introduce a completely different visual identity.
+
+Use:
+
+- Premium dark and light surfaces.
+- Refined typography.
+- Elegant Bento layouts.
+- Carefully controlled glass effects.
+- Clear information hierarchy.
+- Balanced negative space.
+- Sophisticated charts.
+- Meaningful icons.
+- Subtle micro-interactions.
+
+Avoid:
+
+- Excessive neon colors.
+- Overly futuristic aesthetics.
+- Too many rounded cards.
+- Unnecessary badges.
+- Repetitive panels.
+- Excessive glow.
+- Large empty areas.
+- Decorative elements that reduce readability.
+
+## 17.1. Suggested page composition
+
+**TOP SECTION**
+
+A compact introductory area:
+
+MAQSADLAR
+
+"Kelajagingizni rejalashtiring. Natijangizni kuzating. Maqsadlaringizga erishing."
+
+Below it:
+
+- Active goals.
+- Upcoming deadline.
+- Overall achievement overview.
+
+**SECTION 2**
+
+Certificate Explorer.
+
+**SECTION 3**
+
+Country Value Simulator.
+
+**SECTION 4**
+
+Personal Goals Workspace.
+
+**SECTION 5**
+
+Goal Strategist and weekly recommendations.
+
+**SECTION 6**
+
+Analytics and achievement history.
+
+Do not display all information simultaneously if it creates unnecessary scrolling.
+
+Use progressive disclosure.
+
+## 17.2. Responsive behavior
+
+Optimize for:
+
+- Desktop.
+- Laptop.
+- Tablet.
+- Mobile.
+
+On mobile:
+
+- Convert complex tables into readable comparison cards.
+- Use compact filters.
+- Avoid horizontal overflow.
+- Keep the main goal actions accessible.
+- Make progress updates easy.
+
+## 17.3. Animation
+
+Use purposeful transitions.
+
+Prefer:
+
+- Opacity.
+- Transform.
+- Lightweight SVG animations.
+- CSS transitions.
+
+Respect reduced-motion preferences.
+
+Do not claim 60 FPS without actual performance measurements.
+
+# 18. MULTILINGUAL SUPPORT
+
+Use the existing localization architecture.
+
+Translate every new interface element into all currently supported application languages.
+
+Include:
+
+- Certificate categories.
+- Certificate details.
+- Goal forms.
+- Goal statuses.
+- Simulator.
+- AI recommendations.
+- Notifications.
+- Empty states.
+- Error messages.
+- Subscription restrictions.
+- Tooltips.
+
+Keep official certificate names in their original internationally recognized form.
+
+Descriptions and explanations should follow the selected application language.
+
+The AI must respond in the selected language unless the user requests otherwise.
+
+# 19. ERROR HANDLING & EDGE CASES
+
+Test the following:
+
+- Goal without a target date.
+- Goal without a current score.
+- Goal with a categorical score.
+- Goal with multiple milestones.
+- Goal with an expired deadline.
+- Goal completed after its target date.
+- Goal paused and resumed.
+- Duplicate certificate selection.
+- Missing examination fee.
+- Unverified certificate information.
+- Country without available qualification data.
+- Multiple certificates with conflicting requirements.
+- Failed AI requests.
+- Failed database synchronization.
+- Offline state.
+- Subscription quota exceeded.
+- Deleted or archived goals.
+- Timezone differences.
+
+The application must remain usable even when some certificate or country information is unavailable.
+
+# 20. TESTING & QUALITY ASSURANCE
+
+Verify the entire feature.
+
+**CERTIFICATE EXPLORER**
+
+- Search.
+- Filters.
+- Categories.
+- Certificate details.
+- Official links.
+- Comparison.
+- Add-to-goal action.
+- Duplicate prevention.
+
+**COUNTRY SIMULATOR**
+
+- Country selection.
+- Multi-certificate selection.
+- Target score entry.
+- University analysis.
+- Career analysis.
+- Scholarship analysis.
+- Visa information.
+- Source references.
+- Uncertainty handling.
+
+**GOALS**
+
+- Create.
+- Edit.
+- Delete with confirmation.
+- Archive.
+- Pause.
+- Resume.
+- Update scores.
+- Change target dates.
+- Calculate remaining days.
+- Calculate progress.
+- Mark achieved.
+- Create milestones.
+- Group related goals.
+
+**AI INTEGRATION**
+
+- Goal analysis.
+- Preparation plan generation.
+- Routine synchronization.
+- Task creation.
+- Habit suggestions.
+- Academic roadmap integration.
+- Duplicate prevention.
+- Permission handling.
+- Error recovery.
+
+**SUBSCRIPTIONS**
+
+- Free active-goal limit.
+- Scholar Plus permissions.
+- Global Elite Pro permissions.
+- Server-side entitlement validation.
+
+**DESIGN**
+
+- Dark Mode.
+- Light Mode.
+- Desktop.
+- Mobile.
+- Tablet.
+- Keyboard navigation.
+- Reduced motion.
+- Accessibility.
+
+# 21. IMPLEMENTATION ORDER
+
+Implement the feature incrementally.
+
+### PHASE 1 — PROJECT AUDIT
+
+Inspect the existing application and its 10-agent architecture.
+
+### PHASE 2 — DATA FOUNDATION
+
+Create the certificate catalog structure, goal models, relationships, and secure persistence.
+
+### PHASE 3 — CERTIFICATE EXPLORER
+
+Implement the searchable international certificate database.
+
+### PHASE 4 — COUNTRY SIMULATOR
+
+Implement country selection, qualification combinations, opportunity analysis, and official evidence references.
+
+### PHASE 5 — PERSONAL GOALS
+
+Implement goal creation, editing, progress, dates, milestones, and goal groups.
+
+### PHASE 6 — AI STRATEGIST
+
+Connect the existing agents to the goal preparation workflow.
+
+### PHASE 7 — ECOSYSTEM SYNCHRONIZATION
+
+Integrate with Routine, To-Do List, Habits Tracker, Research Library, and Akademik yo'lim.
+
+### PHASE 8 — ANALYTICS
+
+Implement progress analytics, achievement history, and deadline-risk analysis.
+
+### PHASE 9 — SUBSCRIPTIONS & LOCALIZATION
+
+Integrate entitlements and multilingual support.
+
+### PHASE 10 — FINAL TESTING
+
+Verify functionality, data preservation, performance, security, and responsive design.
+
+Do not stop after preparing a plan.
+
+Implement the requested feature within the capabilities of the existing project.
+
+If a phase is blocked by missing credentials, data, or external integrations, complete the parts that can safely be implemented and report the remaining limitation.
+
+# 22. FINAL ACCEPTANCE CRITERIA
+
+The new Maqsadlar section is complete only when:
+
+1. It appears in the correct sidebar position.
+2. Certificate Explorer works.
+3. Certificate information is structured and traceable.
+4. Country Simulator produces evidence-based results.
+5. Users can create different types of goals.
+6. Progress and remaining days are calculated correctly.
+7. Related goals can be grouped.
+8. AI Goal Strategist uses the existing 10-agent ecosystem.
+9. Approved plans can synchronize with existing modules.
+10. Existing user data remains intact.
+11. Subscription permissions are enforced correctly.
+12. Dark and Light modes are polished.
+13. All currently supported application languages are covered.
+14. Desktop and mobile layouts work.
+15. Important actions have been tested.
+16. Unsupported information is clearly identified.
+17. No fake AI execution or fabricated official requirements exist.
+
+# FINAL DIRECTIVE
+
+Build MAQSADLAR as the central intelligence layer connecting international qualifications, personal ambitions, university admission, career opportunities, and daily academic execution.
+
+The most important outcome is not the number of certificates or the number of goal cards.
+
+It is the ability to answer four essential questions:
+
+**1. NIMAGA ERISHMOQCHIMAN?**
+
+What exactly do I want to achieve?
+
+**2. BU MAQSAD MEN UCHUN QANDAY IMKONIYATLAR OCHADI?**
+
+What educational and professional opportunities can it create?
+
+**3. UNGA QANDAY ERISHAMAN?**
+
+What realistic preparation strategy should I follow?
+
+**4. BUGUN NIMA QILISHIM KERAK?**
+
+What is the single most useful action I should take today?
+
+Every part of the module must contribute to answering these questions.
+
+Preserve the existing application.
+
+Reuse its ten AI agents.
+
+Connect every new capability to the existing ecosystem.
+
+Prioritize accuracy, functionality, clarity, and long-term maintainability.
+
+**MAQSADLAR SHOULD TURN LONG-TERM AMBITIONS INTO MEASURABLE, INTELLIGENTLY PLANNED AND ACTIONABLE ACHIEVEMENTS.**

@@ -1,0 +1,1072 @@
+# MASTER IMPLEMENTATION PROMPT
+# ACADEMIC PATHWAY — THE COSMIC JOURNEY
+## ULTRA-REALISTIC 3D COSMIC ENVIRONMENT + PHYSICALLY PLAUSIBLE INTERACTIONS + INTELLIGENT ACADEMIC GPS
+
+You are a principal 3D graphics engineer, cinematic environment artist, interaction designer, full-stack engineer, and intelligent academic planning systems architect.
+
+Your mission is to transform the EXISTING map panel inside the Academic Pathway section of Global University Intelligence into an extraordinary, ultra-realistic, interactive 3D cosmic environment.
+
+This is not a conventional roadmap redesign.
+
+It is the creation of a sophisticated visual and functional system in which:
+
+- The Sun represents the user's ultimate goal.
+- Planets represent major milestones.
+- Stars represent smaller actionable tasks.
+- Cosmic routes represent the logical sequence and dependencies of the journey.
+- The user's actual progress changes the state of the universe.
+
+The experience must combine the visual realism of a high-quality cinematic space environment with the clarity and reliability of a professional academic planning system.
+
+**The visual standard is ultra-realistic. The physical behavior must be believable. The roadmap must be genuinely useful.**
+
+---
+
+# 0. STRICT PROJECT PRESERVATION AND TECHNICAL AUDIT
+
+This is an enhancement of an existing application.
+
+Do not rebuild Global University Intelligence.
+
+Before implementation, inspect the actual project.
+
+Identify:
+
+1. The exact Academic Pathway map component.
+2. Its parent component and layout constraints.
+3. Existing roadmap data structures.
+4. Existing milestone and task logic.
+5. Existing progress tracking.
+6. Current 3D rendering technology.
+7. Existing camera and interaction systems.
+8. Existing animation lifecycle.
+9. Existing styling and visual tokens.
+10. Any current bugs or rendering limitations.
+
+Determine which implementation techniques are compatible with the existing architecture.
+
+Do not assume that the project uses Three.js, React Three Fiber, WebGL, or any particular rendering engine until verified.
+
+### Strict preservation rules
+
+- Modify only the Academic Pathway map and directly related components.
+- Do not redesign the entire Academic Pathway page.
+- Do not modify unrelated application sections.
+- Do not change global themes or typography.
+- Do not change application navigation.
+- Do not remove existing roadmap information.
+- Preserve existing user data and progress.
+- Reuse existing rendering and data infrastructure where possible.
+- Do not introduce a second rendering engine unnecessarily.
+- Do not replace real functionality with visual simulations.
+- Do not create fake tasks, progress, or achievements.
+- Do not overwrite working code merely to simplify implementation.
+
+Create or preserve a recoverable checkpoint before significant changes.
+
+If the existing implementation contains valuable functionality, extend it rather than replacing it.
+
+---
+
+# 1. VISUAL ART DIRECTION — ULTRA-REALISTIC CINEMATIC SPACE
+
+This is the highest-priority visual requirement.
+
+The cosmic environment must look like an exceptionally detailed, professionally rendered 3D space scene.
+
+Do not create a cartoon solar system.
+
+Do not create flat spheres with colored gradients.
+
+Do not create ordinary game-style planets.
+
+The result must have the visual depth, material quality, lighting sophistication, and environmental detail associated with premium cinematic space visualization.
+
+## 1.1 Overall environment
+
+Create a deep, expansive cosmic environment containing:
+
+- Vast dark interstellar space.
+- Multiple layers of distant stars.
+- Subtle galaxies and nebulae.
+- Volumetric cosmic clouds where technically supported.
+- Atmospheric depth.
+- Realistic light falloff.
+- Carefully composed foreground and background objects.
+- A convincing sense of scale and distance.
+
+The background must never feel like a static wallpaper.
+
+It should have subtle spatial depth and restrained movement.
+
+Use different visual scales:
+
+- Very distant stars remain small and subtle.
+- Intermediate celestial objects provide depth.
+- Nearby objects have more visible detail.
+- Nebulae provide atmospheric structure without overwhelming the scene.
+
+Avoid excessive particle density.
+
+Avoid making every background object equally bright.
+
+The environment must have a clear visual hierarchy.
+
+## 1.2 Ultra-realistic planetary materials
+
+Every major planet must have a convincing celestial appearance.
+
+Use physically based materials wherever supported by the current rendering architecture.
+
+Investigate and correctly implement:
+
+- High-quality surface textures.
+- Physically plausible roughness.
+- Material reflectivity.
+- Surface normals.
+- Bump or displacement detail where appropriate.
+- Atmospheric scattering.
+- Fresnel effects.
+- Cloud layers.
+- Surface shadows.
+- Specular highlights.
+- Accurate light response.
+- Subtle surface imperfections.
+
+Do not apply every effect indiscriminately.
+
+Choose appropriate material properties for each planet.
+
+For example:
+
+A rocky planet should not look like a polished glass sphere.
+
+A gas giant should not look like a solid stone object.
+
+An atmospheric planet should have visible depth and a subtle atmospheric rim.
+
+A planet with rings should have realistic ring geometry, shading, transparency, and shadows.
+
+### Planet detail requirements
+
+Where appropriate, include:
+
+- Large-scale surface formations.
+- Subtle geological structures.
+- Cloud formations.
+- Atmospheric layers.
+- Natural color variation.
+- Surface roughness variation.
+- Terminator shadows between illuminated and dark sides.
+
+Textures must remain detailed when the camera approaches a planet.
+
+Avoid obvious stretching, repeated texture patterns, low-resolution surfaces, and artificial-looking materials.
+
+## 1.3 Atmospheric realism
+
+Atmospheres should be visually distinct from planetary surfaces.
+
+Use:
+
+- Subtle atmospheric halos.
+- Fresnel-based edge illumination.
+- Light scattering.
+- Natural color gradients.
+- Controlled transparency.
+- Correct depth relationships.
+
+Atmospheric effects must remain restrained.
+
+Avoid exaggerated glowing outlines around every object.
+
+## 1.4 The Sun — ultra-realistic final destination
+
+The Sun represents the user's ultimate goal.
+
+It must be the most visually significant celestial object.
+
+Create a convincing solar appearance using supported rendering techniques:
+
+- Detailed animated surface patterns.
+- Layered solar atmosphere.
+- Granulation-like surface variation.
+- Subtle plasma structures.
+- Controlled emissive lighting.
+- Natural-looking solar glow.
+- Soft illumination of nearby space.
+- Carefully controlled bloom.
+
+Avoid cartoon flames, simple yellow spheres, and excessive neon effects.
+
+The Sun should feel luminous, powerful, and physically convincing.
+
+Its visual state may evolve according to real roadmap progress.
+
+However, the Sun must never become so bright that it obscures the rest of the interface.
+
+---
+
+# 2. PHYSICAL BELIEVABILITY — COHERENT 3D SPACE
+
+The scene must feel like a real three-dimensional environment rather than an arrangement of independent animated objects.
+
+Use physically plausible spatial relationships.
+
+## 2.1 Coordinate system and scale
+
+Establish a coherent 3D coordinate system.
+
+The planets, Sun, orbital paths, stars, and background layers must occupy consistent spatial positions.
+
+Important:
+
+Do not attempt to reproduce literal astronomical distances or planetary sizes.
+
+Real astronomical scale would make interaction and visibility impractical.
+
+Instead, use a carefully designed compressed spatial scale that preserves:
+
+- Convincing perspective.
+- Relative depth.
+- Clear object separation.
+- Natural camera movement.
+- Understandable orbital relationships.
+
+Visual realism must not be sacrificed for mathematical scale accuracy.
+
+## 2.2 Orbital motion
+
+Use restrained, coherent orbital movement where appropriate.
+
+The motion should feel physically inspired.
+
+Consider:
+
+- Smooth orbital trajectories.
+- Consistent angular movement.
+- Stable orbital planes.
+- Natural acceleration.
+- Predictable motion.
+- Carefully controlled rotation.
+
+Do not randomly move planets.
+
+Do not create independent animations that make the system feel physically inconsistent.
+
+Full N-body gravitational simulation is NOT required.
+
+Do not introduce expensive gravitational calculations without a real functional reason.
+
+Use deterministic orbital calculations or stable animation curves that create believable motion.
+
+The primary requirement is visual and physical plausibility, not an unnecessary scientific simulation.
+
+## 2.3 Mouse-controlled spatial interaction
+
+The mouse must interact with the 3D environment naturally.
+
+Implement:
+
+- Smooth camera parallax.
+- Subtle perspective response.
+- Inertial camera movement.
+- Controlled spatial rotation.
+- Smooth interpolation.
+- Natural acceleration and deceleration.
+
+The camera should respond to cursor position without feeling directly attached to it.
+
+Movement must have a slight, controlled delay that creates a convincing sense of mass and inertia.
+
+When the cursor stops moving, the camera should settle smoothly.
+
+Avoid:
+
+- Abrupt snapping.
+- Excessive rotation.
+- Uncontrolled camera drift.
+- Uncomfortable motion.
+- Distortion of the planetary arrangement.
+
+Mouse sensitivity should be carefully calibrated.
+
+Support touch interaction separately on mobile devices.
+
+## 2.4 Lighting and shadows
+
+Lighting must be spatially coherent.
+
+The Sun should act as the primary visual light source where appropriate.
+
+Implement:
+
+- Directional illumination.
+- Natural shadow transitions.
+- Planetary terminator shadows.
+- Atmospheric light scattering.
+- Soft indirect illumination where supported.
+- Appropriate ambient illumination.
+- Controlled highlights.
+
+Do not illuminate every planet equally from every direction.
+
+Do not make shadows disappear without a visual reason.
+
+The dark side of a planet should retain subtle readable detail without appearing artificially illuminated.
+
+## 2.5 Reflections and post-processing
+
+Where supported by the existing renderer, use carefully calibrated:
+
+- Environment reflections.
+- Bloom.
+- Tone mapping.
+- Ambient occlusion.
+- Depth of field.
+- Motion blur only where genuinely useful.
+- Color grading.
+
+Do not apply every post-processing effect globally.
+
+Excessive bloom, blur, or contrast can destroy detail.
+
+Preserve a natural cinematic image.
+
+---
+
+# 3. THE SOLAR SYSTEM — THE ACADEMIC JOURNEY
+
+Transform the current roadmap into a clear solar-system-like structure.
+
+The hierarchy must be:
+
+**SUN → PLANETS → STARS → INDIVIDUAL ACTIONS**
+
+## 3.1 The Sun
+
+The Sun represents the final goal.
+
+Examples:
+
+- IELTS 7.5.
+- Admission to Kyutech.
+- Receiving a MEXT scholarship.
+- Completing a university degree.
+- Reaching a specific professional level.
+
+The Sun must remain the ultimate destination.
+
+Do not treat it as an ordinary milestone.
+
+## 3.2 Major milestone planets
+
+The journey should normally contain approximately 7–9 major milestone planets.
+
+However, this number must adapt to the actual complexity of the selected goal.
+
+Rules:
+
+- Simple goals may need fewer milestones.
+- Complex multi-year goals may need more.
+- Do not artificially divide simple tasks into unnecessary planets.
+- Do not omit essential stages merely to maintain a fixed number.
+
+Every planet must represent a distinct stage of development.
+
+Example academic journey:
+
+1. Initial assessment and foundation.
+2. Language development.
+3. Mathematics and science preparation.
+4. Standardized examination preparation.
+5. Academic portfolio development.
+6. University and scholarship research.
+7. Application preparation.
+8. Entrance examinations and interviews.
+9. Admission and final preparation.
+
+This is only an example.
+
+Generate milestones based on the user's actual goal and requirements.
+
+## 3.3 Individual planetary identity
+
+Each planet must have a distinct visual identity.
+
+Use carefully selected differences in:
+
+- Surface material.
+- Color.
+- Atmosphere.
+- Geological detail.
+- Ring systems where appropriate.
+- Lighting response.
+
+Maintain a unified cinematic art direction.
+
+Do not make every planet a different bright color simply to distinguish them.
+
+Planet labels and milestone numbers should be elegant and unobtrusive.
+
+---
+
+# 4. COSMIC ROUTES — CLEAR AND MEANINGFUL PATHS
+
+The current map appears to have insufficiently clear route structure.
+
+Redesign the routes to make the journey visually understandable.
+
+## 4.1 Route hierarchy
+
+Use a limited number of meaningful routes.
+
+The user must understand:
+
+- Where the journey begins.
+- Which milestone comes next.
+- Which milestones are prerequisites.
+- Which tasks can be completed in parallel.
+- How the route ultimately reaches the Sun.
+
+Do not cover the environment with excessive lines.
+
+The number of visible routes must be based on actual milestone dependencies.
+
+## 4.2 Route appearance
+
+Use refined, subtle, luminous trajectories.
+
+They should have:
+
+- Smooth curves.
+- Appropriate depth.
+- Natural perspective.
+- Controlled illumination.
+- Subtle animated energy.
+- Consistent spatial positioning.
+
+Avoid thick neon tubes and excessively bright connecting lines.
+
+## 4.3 Route states
+
+Visually distinguish:
+
+- Completed routes.
+- Current active route.
+- Upcoming routes.
+- Optional branches, if applicable.
+
+Use restrained changes in brightness and material appearance.
+
+The route state must be derived from actual roadmap data.
+
+---
+
+# 5. THREE LEVELS OF INTERACTIVE EXPLORATION
+
+The map must contain three clearly defined interaction levels.
+
+## LEVEL 1 — COMPLETE COSMIC MAP
+
+The initial view displays:
+
+- The Sun.
+- Major milestone planets.
+- Main routes.
+- Distant cosmic environment.
+- Current progress indicators.
+
+The user should immediately understand the overall journey.
+
+Avoid permanent large text labels.
+
+Use contextual labels and subtle indicators.
+
+## LEVEL 2 — PLANET EXPLORATION
+
+When the user clicks a planet:
+
+1. Detect the selected planet.
+2. Smoothly approach it with the camera.
+3. Increase its apparent size naturally through perspective.
+4. Preserve its material detail.
+5. Reduce distraction from distant objects without making the environment disappear.
+6. Reveal the smaller stars associated with this milestone.
+7. Display its contextual information panel.
+
+The transition should be smooth, relatively fast, and cinematic.
+
+Do not use a hard scene replacement.
+
+Do not create a black frame.
+
+Do not hide the entire background.
+
+The selected planet must remain recognizably three-dimensional.
+
+## LEVEL 3 — STAR EXPLORATION
+
+Each star represents an actual smaller task inside the selected milestone.
+
+Example:
+
+Planet: IELTS Preparation.
+
+Associated stars:
+
+- Reading development.
+- Listening development.
+- Speaking practice.
+- Writing development.
+- Vocabulary development.
+- Mock examinations.
+- Final assessment.
+
+These are illustrative examples only.
+
+Generate tasks appropriate to the actual user's goal.
+
+When a star is selected:
+
+- Highlight the star.
+- Approach it smoothly or emphasize it with controlled camera movement.
+- Display the actual task information.
+- Provide real task-management controls.
+
+The user must be able to return to the planet and then to the complete map without losing their current context.
+
+---
+
+# 6. CAMERA SYSTEM AND TRANSITIONS
+
+The camera is responsible for making the cosmic experience feel premium.
+
+Implement a coherent camera-control system.
+
+Requirements:
+
+- Smooth zoom.
+- Natural acceleration and deceleration.
+- Inertial movement.
+- Stable target tracking.
+- Controlled perspective.
+- Correct near and far clipping behavior.
+- Smooth return transitions.
+- No sudden camera jumps.
+
+When approaching a planet, the camera must select an appropriate viewing angle.
+
+Do not move directly through the planet.
+
+Do not place the camera inside geometry unintentionally.
+
+Do not allow the selected object to disappear behind the camera.
+
+Preserve the scene state during transitions.
+
+Avoid unnecessary camera resets.
+
+When returning to the main map, restore the previous overview framing smoothly.
+
+---
+
+# 7. CONTEXTUAL INFORMATION PANELS — REAL TRANSPARENT GLASS
+
+All planet and star information must appear within the existing map panel.
+
+Do not navigate to a separate full-screen page for ordinary exploration.
+
+Create an elegant transparent glass interface.
+
+Visual requirements:
+
+- Real transparency.
+- Visible cosmic environment behind the panel.
+- Refined background blur.
+- Subtle glass reflections.
+- Fine borders.
+- Controlled surface highlights.
+- Sophisticated typography.
+- Comfortable spacing.
+
+The panel must not become an opaque dark rectangle.
+
+Do not darken the entire cosmic background when a planet or star is selected.
+
+If the cosmic environment is rendered inside a WebGL canvas, inspect the actual DOM/canvas layering before implementing blur.
+
+Do not assume that CSS backdrop-filter will automatically blur canvas content.
+
+Choose a technically compatible solution.
+
+## 7.1 Planet information
+
+Display:
+
+- Milestone number.
+- Milestone name.
+- Purpose.
+- Why it matters.
+- Expected outcome.
+- Estimated duration.
+- Planned start date.
+- Target completion date.
+- Current progress.
+- Completion status.
+- Number of associated tasks.
+- Prerequisites.
+
+## 7.2 Star information
+
+Display:
+
+- Task title.
+- Detailed instructions.
+- Why the task matters.
+- Expected result.
+- Estimated effort.
+- Deadline.
+- Prerequisites.
+- Completion criteria.
+- Related learning materials, where available.
+- Current status.
+
+Provide functional actions:
+
+- Mark as complete.
+- Edit task.
+- Open related resources.
+- Review prerequisites.
+- Navigate to the next available task.
+
+All displayed information must come from actual roadmap data.
+
+---
+
+# 8. THE INTELLIGENT ACADEMIC GPS
+
+The cosmic environment is only the visual representation.
+
+The actual roadmap must be intelligent, realistic, and actionable.
+
+A beautiful visualization with an unreliable plan is a failure.
+
+The system must analyze the user's real goal before generating milestones.
+
+## 8.1 Goal analysis
+
+Consider:
+
+- Exact target.
+- Current knowledge level.
+- Existing skills.
+- Missing prerequisites.
+- Required examinations.
+- Relevant certificates.
+- Target date.
+- Available study time.
+- Available learning resources.
+- Important constraints.
+- Possible obstacles.
+
+Do not generate identical roadmaps for every user.
+
+## 8.2 Actionable tasks
+
+Every task must clearly answer:
+
+1. What must be done?
+2. Why is it necessary?
+3. What result is expected?
+4. How will completion be measured?
+5. How much time is required?
+6. What comes next?
+
+Avoid vague tasks.
+
+Example:
+
+Weak:
+"Improve English listening."
+
+Better:
+"Complete three listening exercises at the appropriate level, review incorrect answers, record unfamiliar vocabulary, and achieve the defined accuracy target in a follow-up assessment."
+
+Task difficulty must match the user's current level.
+
+## 8.3 Prerequisite and dependency system
+
+Represent dependencies accurately.
+
+Do not allow advanced tasks to appear as immediately available if essential prerequisites have not been completed.
+
+However, allow parallel preparation where appropriate.
+
+The system should distinguish:
+
+- Required prerequisites.
+- Recommended preparation.
+- Optional improvements.
+
+## 8.4 Realistic scheduling
+
+Calculate:
+
+- Overall journey duration.
+- Milestone durations.
+- Weekly workload.
+- Individual task estimates.
+- Deadline feasibility.
+
+If the target deadline is unrealistic, explain why.
+
+Suggest a more realistic alternative.
+
+Never silently promise impossible outcomes.
+
+## 8.5 Adaptive roadmap
+
+The roadmap must respond to actual progress.
+
+If the user advances faster than expected:
+
+- Recalculate the remaining timeline.
+- Adjust upcoming milestones where justified.
+- Preserve completed work.
+
+If the user falls behind:
+
+- Identify overdue tasks.
+- Recalculate deadlines.
+- Prioritize critical prerequisites.
+- Suggest a realistic recovery plan.
+
+If available study time changes:
+
+- Adjust workload.
+- Recalculate the schedule.
+- Preserve the overall goal where feasible.
+
+Do not silently delete completed work or rewrite the entire roadmap.
+
+Major changes must be reviewable by the user before being applied.
+
+## 8.6 Evidence-based progress
+
+Distinguish between:
+
+- Task completed.
+- Knowledge assessed.
+- Milestone verified.
+
+Clicking a completion button does not automatically prove mastery.
+
+Use actual assessment results or user-confirmed evidence where appropriate.
+
+Do not generate fake achievement percentages.
+
+---
+
+# 9. THE UNIVERSE RESPONDS TO REAL PROGRESS
+
+The cosmic environment must react to the user's actual achievements.
+
+### Upcoming milestone
+
+- Planet remains in its normal visual state.
+- Associated stars are subdued.
+- Upcoming route remains subtly visible.
+
+### Active milestone
+
+- Planet receives a subtle visual emphasis.
+- Its route becomes more visible.
+- Available tasks become easier to identify.
+
+### Completed milestone
+
+- Planet receives a refined completion appearance.
+- Completed stars gain a subtle visual change.
+- Its route becomes illuminated.
+- The next milestone receives visual emphasis.
+
+### Final goal achieved
+
+- The Sun enters a special completion state.
+- The environment acknowledges the achievement.
+- A meaningful completion summary is displayed.
+
+Do not use excessive explosions, flashing, or childish celebration animations.
+
+All visual progress states must be synchronized with real data.
+
+---
+
+# 10. TECHNICAL REALISM AND RENDERING QUALITY
+
+Before selecting rendering techniques, inspect what the current renderer actually supports.
+
+Use the highest-quality compatible techniques without unnecessarily replacing the existing architecture.
+
+Investigate:
+
+- Physically based rendering.
+- High-resolution textures.
+- Normal and roughness maps.
+- Atmospheric shaders.
+- Fresnel effects.
+- Environment lighting.
+- Shadow mapping.
+- Particle systems.
+- Volumetric effects where supported.
+- Tone mapping.
+- Controlled bloom.
+- Appropriate antialiasing.
+
+Do not claim that an effect is physically accurate if it is only a visual approximation.
+
+Prioritize visual quality and stability together.
+
+## 10.1 Performance optimization
+
+The scene must remain responsive on ordinary laptops.
+
+Use:
+
+- Reusable geometries and materials.
+- Efficient particle management.
+- Appropriate texture resolutions.
+- Controlled draw calls.
+- Efficient animation updates.
+- Proper resource cleanup.
+- Adaptive quality settings where useful.
+
+Avoid:
+
+- Recreating geometry every frame.
+- Repeated material allocation.
+- Unnecessary React state updates.
+- Multiple competing animation loops.
+- Memory leaks.
+- Excessive post-processing.
+- Unnecessary real-time physics calculations.
+
+Do not sacrifice all visual quality for performance.
+
+Optimize the implementation intelligently.
+
+## 10.2 Rendering stability
+
+Explicitly test and prevent:
+
+- Flickering.
+- Blank frames.
+- Invisible clipping.
+- Incorrect depth sorting.
+- Transparent object rendering errors.
+- Broken camera transitions.
+- Canvas resizing problems.
+- Objects disappearing unexpectedly.
+- Incorrect pointer event handling.
+
+Do not solve these issues through arbitrary z-index changes or disabling essential depth behavior.
+
+---
+
+# 11. RESPONSIVE AND ACCESSIBLE INTERACTION
+
+Desktop:
+
+- Full cinematic cosmic experience.
+- Smooth mouse-based camera movement.
+- Precise planet and star selection.
+- Comfortable glass panels.
+
+Tablet:
+
+- Reduced camera sensitivity.
+- Adaptive panel dimensions.
+- Touch-friendly interactions.
+
+Mobile:
+
+- Touch-based selection.
+- Simplified camera controls.
+- One-finger exploration where appropriate.
+- Readable information panels.
+- No hover-only interactions.
+
+Respect reduced-motion preferences where available.
+
+Provide an accessible way to inspect milestones and tasks without relying exclusively on precise 3D interactions.
+
+---
+
+# 12. ACCEPTANCE TESTS
+
+Do not consider implementation complete until these requirements have been checked.
+
+## Visual realism
+
+1. The cosmic background has convincing spatial depth.
+2. Planets have detailed, believable surfaces.
+3. Atmospheres are distinct from planetary surfaces.
+4. Lighting and shadows are spatially coherent.
+5. The Sun looks genuinely luminous.
+6. Nebulae and stars are integrated naturally.
+7. The scene does not look like a cartoon or low-quality game.
+
+## Physical interaction
+
+1. Mouse movement produces smooth parallax.
+2. Camera inertia feels natural.
+3. Planets maintain coherent positions.
+4. Orbital motion is stable.
+5. Camera transitions do not clip through objects.
+6. Scene movement does not feel random.
+
+## Map functionality
+
+1. The Sun represents the actual final goal.
+2. Major planets represent meaningful milestones.
+3. Each planet contains actual subtask stars.
+4. Routes represent actual dependencies.
+5. Planet selection works.
+6. Star selection works.
+7. Information panels work.
+8. Navigation between the three exploration levels works.
+
+## Intelligent planning
+
+1. Milestones match the selected goal.
+2. Tasks are actionable and measurable.
+3. Prerequisites are respected.
+4. Scheduling is realistic.
+5. Progress updates correctly.
+6. Roadmap adaptation preserves completed work.
+
+## Regression
+
+1. Existing Academic Pathway features still work.
+2. Other application modules remain unchanged.
+3. Existing user data remains intact.
+4. The map works at different screen sizes.
+5. No critical rendering or console errors remain.
+
+Do not claim success for an interaction that has not been tested.
+
+---
+
+# 13. IMPLEMENTATION SEQUENCE
+
+Do not perform an uncontrolled full rewrite.
+
+Implement in controlled phases.
+
+### PHASE 1 — INSPECTION AND PROTECTION
+
+Inspect the current map, renderer, data, and interactions.
+
+Create a recoverable checkpoint.
+
+### PHASE 2 — ULTRA-REALISTIC COSMIC ENVIRONMENT
+
+Improve:
+
+- Background depth.
+- Nebulae.
+- Stars.
+- Planetary materials.
+- Atmospheres.
+- Lighting.
+- Shadows.
+- Rendering quality.
+
+Verify visual quality before continuing.
+
+### PHASE 3 — PHYSICALLY PLAUSIBLE 3D SYSTEM
+
+Implement:
+
+- Spatial organization.
+- Mouse parallax.
+- Camera inertia.
+- Coherent orbital movement.
+- Stable camera transitions.
+
+### PHASE 4 — SOLAR SYSTEM AND ROUTES
+
+Implement:
+
+- Ultimate goal Sun.
+- Adaptive 7–9 milestone planets.
+- Clear and meaningful routes.
+- Actual milestone relationships.
+
+### PHASE 5 — INTERACTIVE EXPLORATION
+
+Implement:
+
+- Planet approach.
+- Nested stars.
+- Star selection.
+- Transparent glass information panels.
+- Smooth return navigation.
+
+### PHASE 6 — INTELLIGENT ACADEMIC PLANNING
+
+Connect:
+
+- Goals.
+- Milestones.
+- Tasks.
+- Prerequisites.
+- Deadlines.
+- Progress.
+- Adaptive scheduling.
+
+### PHASE 7 — FINAL OPTIMIZATION
+
+Test:
+
+- Visual realism.
+- Interaction quality.
+- Rendering stability.
+- Performance.
+- Responsive behavior.
+- Existing functionality.
+
+Complete each phase before moving to the next.
+
+---
+
+# FINAL CREATIVE DIRECTION
+
+Imagine a user opening Academic Pathway.
+
+Instead of seeing an ordinary roadmap, they enter a breathtaking, deeply realistic cosmic environment.
+
+A luminous Sun represents the goal they genuinely want to achieve.
+
+Around it, carefully positioned planets represent the major stages of their journey.
+
+When the user approaches a planet, its smaller stars become visible.
+
+Each star represents a real action.
+
+Selecting a star reveals exactly what the user needs to do, why it matters, and what result is expected.
+
+The routes communicate the logical structure of the journey.
+
+The universe changes as real progress is made.
+
+The experience must be beautiful enough to inspire exploration and reliable enough to support serious long-term planning.
+
+**ULTRA-REALISTIC VISUAL QUALITY IS A CORE REQUIREMENT, NOT AN OPTIONAL DECORATION.**
+
+Do not settle for generic 3D spheres, flat backgrounds, cheap glow effects, or ordinary game-like graphics.
+
+Build an exceptionally detailed, cinematic, physically plausible cosmic environment while preserving the existing application's architecture and functionality.
+
+**FINAL DIRECTIVE: Transform the existing Academic Pathway map into an ultra-realistic interactive cosmic academic GPS — a universe where the Sun is the destination, planets are milestones, stars are actionable tasks, and every route has a genuine purpose.**

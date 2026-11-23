@@ -1,0 +1,1305 @@
+# MASTER IMPLEMENTATION PROMPT
+# COSMIC DIAMOND PORTAL — MULTI-STAGE INTERACTIVE 3D EXPERIENCE
+
+## 1. ROLE & MISSION
+
+Act as a world-class Creative Technologist, Senior Frontend Engineer, 3D Interaction Designer, Motion Graphics Specialist, UI/UX Architect, and Performance Optimization Engineer.
+
+Your task is to transform **ONLY the existing purple faceted diamond interaction inside the Dashboard hero banner** of the existing **Global University Intelligence** application into a premium, cinematic, multi-stage interactive experience called:
+
+**COSMIC DIAMOND PORTAL**
+
+This must not be a simple visual redesign. It must become a fully functional interactive experience with three connected stages:
+
+1. **Crystal Fracture** — the original diamond physically breaks apart inside the Dashboard hero.
+2. **Cosmic Universe** — the user enters a full-screen cosmic environment containing 10 unique orbiting crystal fragments.
+3. **Shard Discovery** — selecting a fragment opens an immersive split-focus experience with a detailed section information panel.
+
+The final result should feel like an exceptional combination of a premium interactive product experience, a cinematic science-fiction interface, and a sophisticated 3D crystal visualization.
+
+The visual quality should be comparable to a professionally produced 3D motion-design sequence, while remaining smooth, elegant, readable, and practical inside a real web application.
+
+---
+
+# 2. REFERENCE MATERIAL — ANALYZE BEFORE IMPLEMENTING
+
+Before writing code, inspect the supplied reference video:
+
+**`video_1.mp4`**
+
+Analyze the reference carefully, especially:
+
+- Crystal geometry and silhouette.
+- Purple-violet material appearance.
+- Transparency and internal light refraction.
+- Facet arrangement and reflection behavior.
+- Crystal lighting and contrast.
+- Animation speed and movement quality.
+- Overall visual atmosphere.
+- Relationship between the crystal and its surrounding environment.
+
+Use the video as a visual quality reference, not as a reason to copy every detail mechanically.
+
+The objective is to preserve the recognizable visual identity of the existing purple diamond while significantly elevating its interaction, material realism, depth, and cinematic presentation.
+
+If the reference video is unavailable or cannot be inspected, analyze the existing Dashboard diamond directly and use the visual requirements in this prompt.
+
+**Important:** Do not replace the original crystal with a generic glowing polygon, ordinary SVG diamond, flat icon, or simple purple CSS shape.
+
+The crystal must remain recognizable as a faceted, translucent, three-dimensional gemstone.
+
+---
+
+# 3. CRITICAL ISOLATION & NON-DESTRUCTIVE ARCHITECTURE
+
+This is the most important implementation constraint.
+
+## 3.1 Strict modification boundaries
+
+Modify ONLY:
+
+- The existing purple diamond interaction.
+- The internal rendering and interaction logic required by that diamond.
+- The dedicated full-screen cosmic experience opened by that diamond.
+
+Do NOT modify:
+
+- Sidebar structure or navigation.
+- Sidebar labels or ordering.
+- Other Dashboard components.
+- Existing hero text or content.
+- Existing Dashboard layout.
+- Other application pages.
+- Existing colors, typography, fonts, spacing systems, or design tokens outside this feature.
+- Existing datasets or database records.
+- Existing user settings.
+- Existing subscription logic.
+- Existing authentication.
+- Existing AI agents.
+- Existing routes or routing architecture.
+
+Do not redesign the entire Dashboard.
+
+Do not introduce a new global visual theme.
+
+Do not change the appearance of unrelated components to make the new feature look consistent.
+
+The new experience must inherit the existing application's design language where appropriate, while maintaining its own dedicated cinematic environment.
+
+## 3.2 Component isolation
+
+Implement the feature as a self-contained component.
+
+Suggested architecture:
+
+```text
+components/
+  cosmic-diamond/
+    CosmicDiamondPortal.tsx
+    CrystalDiamond.tsx
+    CrystalShard.tsx
+    CrystalGeometry.ts
+    CrystalFracture.ts
+    EnergyCore.tsx
+    CosmicEnvironment.tsx
+    OrbitSystem.tsx
+    ConstellationLines.tsx
+    ShardDetailPanel.tsx
+    CosmicControls.tsx
+    cosmicSections.ts
+    cosmicAnimations.ts
+    cosmicTypes.ts
+```
+
+Adapt the folder structure to the existing project conventions.
+
+Do not create unnecessary files if the existing architecture already provides suitable utilities.
+
+Mount the main component exactly where the current Dashboard hero diamond exists.
+
+The existing diamond should be replaced by the new interactive component without changing the surrounding hero structure.
+
+## 3.3 Preserve existing project architecture
+
+Before implementation:
+
+1. Inspect the existing framework and project structure.
+2. Identify the current Dashboard hero component.
+3. Identify how the original diamond is rendered.
+4. Inspect the existing routing system.
+5. Identify the actual routes of the 10 application sections.
+6. Inspect installed animation and 3D libraries.
+7. Identify the existing styling system.
+8. Identify how the application handles overlays, modals, and full-screen experiences.
+
+Reuse existing dependencies whenever possible.
+
+Potential technologies, depending on the existing stack:
+
+- Three.js / React Three Fiber for real 3D rendering.
+- Framer Motion or Motion for interface transitions.
+- CSS transforms and perspective for lightweight depth effects.
+- WebGL shaders for advanced crystal materials.
+- Canvas or SVG for lightweight constellation rendering.
+
+Do not install multiple libraries that perform the same task.
+
+Do not introduce a heavy 3D dependency if the project already has an appropriate rendering solution.
+
+If a required dependency is genuinely missing, select the smallest suitable solution and explain the reason.
+
+---
+
+# 4. EXPERIENCE ARCHITECTURE — THREE CONNECTED STAGES
+
+The experience must follow this exact interaction sequence:
+
+```text
+DASHBOARD HERO
+     |
+     | Double-click / accessible activation
+     v
+STAGE 1 — CRYSTAL FRACTURE
+     |
+     | Crystal fragments separate
+     | Central energy core appears
+     v
+     | Click central energy core
+     v
+STAGE 2 — COSMIC UNIVERSE
+     |
+     | 10 unique fragments orbit around the core
+     |
+     | Click any fragment
+     v
+STAGE 3 — SHARD DISCOVERY
+     |
+     | Selected shard moves to left
+     | Background becomes blurred
+     | Information panel appears on right
+     |
+     | Return to universe OR open application section
+     v
+STAGE 2 / APPLICATION SECTION
+```
+
+Each stage must have its own visual state, interaction logic, animation timing, and exit behavior.
+
+Transitions must be continuous.
+
+Never abruptly replace one stage with another.
+
+---
+
+# 5. STAGE 1 — ORIGINAL DIAMOND & PHYSICAL FRACTURE
+
+## 5.1 Idle state
+
+Initially, the existing Dashboard hero displays the original purple-violet translucent diamond.
+
+The crystal should feature:
+
+- A recognizable diamond silhouette.
+- Multiple sharp, geometrically distinct facets.
+- Transparent and semi-transparent surfaces.
+- Internal purple, violet, indigo, and subtle cyan light refraction.
+- Natural highlights along selected facet edges.
+- Subtle internal reflections.
+- Realistic depth and layered transparency.
+- Gentle ambient illumination.
+- Very subtle idle movement, if compatible with the existing design.
+
+Avoid excessive glow.
+
+The crystal should look like an actual luminous gemstone, not a flat neon illustration.
+
+Interaction:
+
+- Cursor changes to `pointer`.
+- Hover produces a subtle visual response.
+- A small elegant tooltip appears:
+
+**"Parchalash uchun ikki marta bosing ✨"**
+
+The tooltip must be visually unobtrusive and consistent with the application's existing design language.
+
+## 5.2 Double-click interaction
+
+When the user double-clicks the diamond, initiate the fracture animation.
+
+Do NOT open the full-screen cosmic experience immediately.
+
+The fracture must happen physically inside the existing Dashboard hero container.
+
+The surrounding Dashboard must remain in its original position.
+
+## 5.3 Crystal fracture mechanics
+
+The original crystal must visually break into exactly **10 unique primary fragments**.
+
+Each fragment must have:
+
+- Its own asymmetric polygon geometry.
+- A unique shape.
+- A different size.
+- Different edge angles.
+- Different facet arrangements.
+- Individual rotation values.
+- A distinct center of mass.
+- Independent animation parameters.
+
+Absolutely avoid generating 10 identical triangles.
+
+Avoid a simple explosion effect where all fragments move in the same direction.
+
+The fracture should look like a genuine irregular crystal separation.
+
+### Fracture animation sequence
+
+**Phase A — Initial fracture**
+
+- The diamond briefly illuminates from within.
+- Fine irregular fracture lines appear.
+- Small internal light flashes travel along selected fracture boundaries.
+- The crystal begins separating into its 10 primary fragments.
+
+**Phase B — Fragment separation**
+
+- Each fragment moves outward approximately 40–90 pixels.
+- Movement directions vary naturally.
+- Each fragment receives a unique rotational impulse.
+- Fragments have slightly different acceleration and deceleration.
+- Movement should feel physical rather than random or chaotic.
+
+**Phase C — Orbital stabilization**
+
+After separating, all 10 fragments settle into a continuous orbital arrangement around the original diamond center.
+
+Their movement should remain smooth and controlled.
+
+The orbit must have:
+
+- Different fragment sizes.
+- Different orbital radii.
+- Different rotation speeds.
+- Different angular offsets.
+- Subtle depth variation.
+- Independent but coordinated motion.
+
+The fragments should continue rotating around the center without abrupt direction changes or visible animation resets.
+
+The orbital system must remain visually balanced and must not become chaotic.
+
+## 5.4 Central energy core — YADRO
+
+At the exact center of the shattered diamond, reveal a spherical energy core.
+
+This is the most important visual element of Stage 1.
+
+The core should resemble a miniature cosmic energy source.
+
+Visual characteristics:
+
+- Clearly spherical 3D volume.
+- Luminous violet-indigo-cyan plasma.
+- Deep internal gradients.
+- Subtle flowing energy patterns.
+- Soft atmospheric halo.
+- A few thin gravitational rings.
+- Gentle pulsing illumination.
+- Internal movement that gives the impression of living energy.
+- Subtle reflections from the surrounding crystal fragments.
+
+The core must have a clear spherical silhouette and genuine depth.
+
+Do not use a flat circular gradient as the final result.
+
+The gravitational rings should rotate slowly around the core using slightly different orientations and speeds.
+
+## 5.5 Core interaction hint
+
+Display a subtle hint near the core:
+
+**"Koinotga kirish uchun yadroni bosing"**
+
+The hint should appear after the fracture animation settles.
+
+The central core must have:
+
+- Clear pointer interaction.
+- A subtle hover enlargement.
+- A slightly stronger illumination on hover.
+- A small energy ripple when clicked.
+
+The user should immediately understand that the core is interactive.
+
+---
+
+# 6. STAGE 2 — FULL-SCREEN COSMIC UNIVERSE
+
+## 6.1 Entering the universe
+
+When the user clicks the central energy core, initiate a cinematic transition.
+
+The camera should appear to move toward the core.
+
+Use a coordinated combination of:
+
+- Scale.
+- Position.
+- Opacity.
+- Perspective.
+- Depth.
+- Controlled blur.
+- Light intensity.
+
+The central core should progressively fill the viewport.
+
+The transition should feel like entering the center of the crystal and traveling into another dimension.
+
+Once the transition completes, reveal the full-screen cosmic environment.
+
+Do not make the transition feel like a conventional modal opening.
+
+It must feel like a continuous camera movement.
+
+## 6.2 Full-screen cosmic environment
+
+Create a premium deep-space environment.
+
+The environment should include:
+
+- Very dark indigo and violet space.
+- Subtle nebula clouds.
+- Fine distant stars.
+- Small atmospheric particles.
+- Sparse constellation lines.
+- Subtle volumetric light.
+- A luminous central energy core.
+- Multiple depth layers.
+
+The background must remain dark enough for the crystal fragments to stand out.
+
+Avoid excessive stars, random glowing dots, or distracting visual noise.
+
+The cosmic environment should feel spacious, elegant, mysterious, and immersive.
+
+## 6.3 Ten unique orbiting crystal fragments
+
+Display exactly **10 primary crystal fragments**.
+
+These are the same 10 fragments introduced during Stage 1.
+
+Preserve their identity across transitions.
+
+Do not regenerate completely different fragments when entering the cosmic environment.
+
+Every fragment must retain:
+
+- Its original unique geometry.
+- Its asymmetric silhouette.
+- Its facet structure.
+- Its purple-violet crystal material.
+- Its internal reflections.
+- Its individual identity.
+
+The fragments should orbit around the central energy core at varying distances and depths.
+
+Each fragment must have:
+
+- A unique orbit radius.
+- An individual orbital speed.
+- A different rotation axis.
+- A distinct initial position.
+- A unique depth value.
+- Slightly different scale.
+- Independent animation parameters.
+
+Use smooth continuous orbital movement.
+
+The orbital system should communicate depth and spatial relationships.
+
+Some fragments may move closer to the camera while others remain farther away.
+
+However, all 10 fragments must remain discoverable and visually distinguishable.
+
+## 6.4 Constellation connections
+
+Create subtle constellation lines connecting selected fragments.
+
+The lines should:
+
+- Appear as thin, elegant light connections.
+- Use low-opacity violet or cyan.
+- Connect logically selected points.
+- Update their positions as the fragments orbit.
+- Avoid passing aggressively through the central core.
+- Avoid creating a dense web of lines.
+
+The constellation system should reinforce the idea that all application sections belong to one interconnected ecosystem.
+
+## 6.5 Mouse parallax
+
+Add subtle mouse-based parallax.
+
+When the user moves the cursor:
+
+- Near fragments respond slightly more.
+- Distant fragments respond less.
+- The background shifts subtly.
+- The central core remains visually stable.
+- Constellation connections maintain their correct positions.
+
+Use smooth interpolation rather than directly attaching the scene to mouse coordinates.
+
+The movement must feel like a camera observing a real 3D environment.
+
+On touch devices, use subtle touch-based parallax only when appropriate.
+
+Do not allow parallax to interfere with clicking fragments.
+
+---
+
+# 7. STAGE 3 — SELECTING A CRYSTAL SHARD
+
+This is the primary discovery interaction.
+
+When the user clicks any of the 10 orbiting fragments, open its dedicated information experience.
+
+Each fragment represents one of the application's actual core sections.
+
+## 7.1 Selection transition
+
+On selection:
+
+1. Identify the selected fragment.
+2. Temporarily disable additional fragment selection.
+3. Smoothly increase the selected fragment's visual prominence.
+4. Move the selected fragment toward the left-center of the viewport.
+5. Scale it up.
+6. Maintain its original geometry and material.
+7. Gradually blur the remaining cosmic environment.
+8. Dim the background.
+9. Reveal the information panel on the right.
+
+The transition must feel like selecting an object in a sophisticated 3D interface.
+
+Avoid abrupt position changes.
+
+## 7.2 Background blur and focus
+
+When a fragment is selected:
+
+- The background nebula becomes blurred.
+- Other fragments become blurred and dimmed.
+- Constellation lines become less prominent.
+- Background particles remain subtle.
+- The central core becomes less visually dominant.
+
+Use a rich Gaussian blur effect.
+
+A `backdrop-filter: blur(...)` effect may be used where appropriate, but do not assume Tailwind classes are available.
+
+Use the existing styling architecture.
+
+The blur should not make the page feel excessively heavy or visually muddy.
+
+The selected fragment must remain crisp and sharply illuminated.
+
+## 7.3 Selected shard position
+
+Move the selected fragment to approximately:
+
+- Horizontal position: 12%–18% from the left edge.
+- Vertical position: near the center of the viewport.
+
+The selected shard should become larger and more detailed.
+
+It should retain:
+
+- Its asymmetric geometry.
+- Original crystal material.
+- Purple-violet transparency.
+- Internal refraction.
+- Facet highlights.
+- Distinct silhouette.
+
+Do not replace the selected crystal with a static illustration.
+
+The selected shard should remain a real interactive visual object.
+
+## 7.4 Section title reveal
+
+Reveal the title associated with the selected application section.
+
+The title should appear elegantly near or beside the crystal.
+
+Use a subtle animation:
+
+- Soft opacity reveal.
+- Slight upward movement.
+- Gentle illumination.
+- Clear typographic hierarchy.
+
+The title must remain readable.
+
+Do not force long titles onto the crystal surface if doing so damages readability.
+
+The crystal is the visual focus; the title is the informational focus.
+
+---
+
+# 8. THE RIGHT-SIDE INFORMATION PANEL — SALOHIYAT PASPORTI
+
+Create a premium glassmorphism information panel.
+
+Panel name:
+
+**SALOHIYAT PASPORTI**
+
+## 8.1 Layout
+
+Desktop:
+
+- Panel width: approximately 52%–58% of the viewport.
+- Position: center-right.
+- Height: fit the available viewport while respecting safe margins.
+- Rounded corners consistent with the application design language.
+- Translucent dark glass surface.
+- Subtle border.
+- Controlled inner reflections.
+- Soft shadow.
+- Elegant spacing.
+
+The panel should slide in from the right while the selected shard moves toward the left.
+
+The two animations must be synchronized.
+
+Avoid making the panel excessively wide or crowded.
+
+## 8.2 Panel content
+
+Each section must have its own content.
+
+The panel should dynamically display:
+
+### A. Section identity
+
+- Section title.
+- Short description.
+- Category label.
+- A concise statement of its main purpose.
+
+### B. Power and real value
+
+Explain:
+
+- What this section does.
+- Which student problems it solves.
+- Why it matters.
+- What makes it useful.
+- How it connects to the wider application ecosystem.
+
+Use concrete explanations rather than generic marketing phrases.
+
+### C. Interactive preview
+
+Where appropriate, include:
+
+- Small charts.
+- Progress indicators.
+- Mini data visualizations.
+- Feature highlights.
+- Workflow previews.
+- Example metrics.
+- Relevant interface previews.
+
+All displayed metrics must be grounded in actual application data or clearly labeled as illustrative examples.
+
+Never invent personal achievements, live statistics, user progress, or operational capabilities.
+
+### D. Main actions
+
+Provide two primary navigation controls:
+
+**"Bo‘limga o‘tish →"**
+
+This action must:
+
+1. Close the cosmic experience.
+2. Cleanly restore the original application environment.
+3. Navigate to the actual route of the selected application section.
+4. Preserve existing application navigation behavior.
+5. Avoid opening a duplicate page or incorrect route.
+
+**"← Barcha bo‘laklarga qaytish"**
+
+This action must:
+
+1. Hide the information panel.
+2. Return the selected fragment to its original orbit.
+3. Restore the other fragments.
+4. Restore constellation lines.
+5. Remove the background blur.
+6. Restore the original cosmic camera position.
+7. Continue the orbital animations smoothly.
+
+Do not reload the entire application.
+
+---
+
+# 9. THE 10 CRYSTAL SECTIONS — CONTENT & ROUTE MAPPING
+
+The 10 fragments represent the 10 actual core sections of Global University Intelligence.
+
+Use the following proposed identities as the initial content model.
+
+However, inspect the existing application before implementation.
+
+If an existing section has a different official name, use its real name and route rather than creating a duplicate.
+
+| ID | Section | Core value |
+|---|---|---|
+| 01 | 10-Agent AI Ekotizimi | Intelligent coordination of specialized AI agents and connected workflows |
+| 02 | Dunyo Xaritasi | Explore global universities, countries, locations, and educational opportunities |
+| 03 | GPS Akademik Yo‘l Xaritasi | Visualize academic pathways, university goals, and long-term education plans |
+| 04 | 100+ Sertifikatlar Simulyatori | Explore international qualifications and evaluate their relevance to goals |
+| 05 | Aqlli AI Routine | Transform academic priorities into structured daily and weekly routines |
+| 06 | Qabul Tahlili | Analyze admission requirements, academic profiles, and university fit |
+| 07 | Stipendiyalar | Discover and evaluate scholarship opportunities |
+| 08 | Moliyaviy Reja | Understand education-related budgets, expenses, and financial planning |
+| 09 | Ovozli AI Git | Use the application's existing voice-based AI functionality |
+| 10 | Habits Tracker | Track consistency, habits, and daily progress |
+
+### Critical mapping rules
+
+- These are proposed identities, not permission to invent new modules.
+- Inspect which of these sections actually exist.
+- Preserve the application's official naming conventions.
+- Use real route paths.
+- Reuse existing page components.
+- Do not create fake routes.
+- Do not create duplicate modules.
+- Do not modify the actual sections to accommodate this feature.
+- If a proposed section does not exist, use the closest real existing section only when a genuine mapping is possible.
+- If no valid destination exists, clearly identify the missing route instead of pretending navigation works.
+
+Create one centralized configuration object for all 10 fragments.
+
+Suggested structure:
+
+```ts
+type CosmicSection = {
+  id: string;
+  title: string;
+  description: string;
+  category: string;
+  route: string | null;
+  capabilities: string[];
+  valueProposition: string;
+  previewType: string;
+  previewData?: unknown;
+};
+```
+
+Adapt the type to the project's existing conventions.
+
+All fragment titles, descriptions, routes, and preview configurations should come from this centralized source.
+
+Do not duplicate section content across multiple components.
+
+---
+
+# 10. TOP CONTROLS — COSMIC NAVIGATION
+
+The full-screen cosmic experience must include two elegant controls.
+
+## 10.1 Exploration progress
+
+Display a small progress pill:
+
+**"X / 10 qirra o‘rganildi"**
+
+Where X represents the number of unique fragments the user has opened during the current exploration session.
+
+Rules:
+
+- Opening a fragment for the first time increases the counter.
+- Opening an already explored fragment does not increase it again.
+- Returning to the universe does not reset it.
+- The counter remains accurate while navigating between fragments.
+- The counter resets when the user completely closes the cosmic experience and starts a new session, unless the existing application has a suitable persistence convention.
+
+Use a subtle visual indicator, not an oversized progress bar.
+
+## 10.2 Reassemble crystal
+
+Display a control:
+
+**"Olmosni qayta yig‘ish ✕"**
+
+On activation:
+
+1. Close any open information panel.
+2. Remove the cosmic background blur.
+3. Stop or gracefully transition the orbiting animation.
+4. Pull all 10 fragments toward the central energy core.
+5. Reverse their rotation naturally.
+6. Reconstruct the original diamond silhouette.
+7. Restore the original crystal material and lighting.
+8. Transition back to the Dashboard hero.
+9. Restore the original idle state.
+
+The reconstruction must be a cinematic reverse transformation, not a simple disappearance.
+
+The Dashboard should look exactly as it did before the experience was opened, except for the new diamond component.
+
+---
+
+# 11. MOTION DESIGN & PHYSICS QUALITY
+
+Motion quality is essential.
+
+Avoid generic preset animations where every object moves identically.
+
+## 11.1 Animation principles
+
+Use:
+
+- Smooth interpolation.
+- Controlled acceleration.
+- Natural deceleration.
+- Different movement curves for different objects.
+- Slight rotational inertia.
+- Independent orbital speeds.
+- Subtle depth-based scaling.
+- Continuous animation without visible resets.
+- Coordinated transitions between stages.
+
+## 11.2 Performance requirements
+
+Aim for a stable 60 FPS on capable devices, but do not sacrifice functionality on lower-performance hardware.
+
+Use GPU-friendly properties where possible:
+
+- `transform`
+- `opacity`
+- Efficient shader updates
+- Instanced rendering where suitable
+- Reusable geometry and materials
+- Controlled particle counts
+
+Avoid:
+
+- Animating expensive layout properties every frame.
+- Unnecessary React re-renders.
+- Creating new geometries continuously.
+- Recreating materials during every animation frame.
+- Excessive blur layers.
+- Unbounded particle systems.
+- Memory leaks.
+- Multiple animation loops running simultaneously.
+
+Use requestAnimationFrame or the existing rendering engine appropriately.
+
+Ensure all animation loops, event listeners, and rendering resources are cleaned up when the component unmounts.
+
+## 11.3 Adaptive rendering
+
+The feature must remain usable on:
+
+- Desktop.
+- Laptop.
+- Tablet.
+- Mobile.
+
+On lower-performance devices:
+
+- Reduce particle density.
+- Simplify secondary lighting.
+- Reduce expensive blur.
+- Use fewer decorative effects.
+- Preserve the core interaction.
+- Maintain all essential navigation controls.
+
+Respect `prefers-reduced-motion`.
+
+When reduced motion is enabled, replace long cinematic transitions with shorter, less intense transitions while preserving the complete interaction flow.
+
+---
+
+# 12. RESPONSIVE DESIGN & ACCESSIBILITY
+
+Do not design this experience exclusively for a large desktop screen.
+
+### Desktop
+
+- Full cinematic environment.
+- Selected crystal on the left.
+- Information panel on the right.
+- Comfortable spacing.
+- Fully visible top controls.
+
+### Tablet
+
+- Slightly smaller crystal geometry.
+- Adapted information panel.
+- Responsive spacing.
+- Avoid overlapping controls.
+
+### Mobile
+
+The desktop split-focus layout must not simply be compressed.
+
+Instead:
+
+- Keep the selected crystal visible near the top or upper-center.
+- Place the information panel below it or use an appropriate full-width layout.
+- Keep navigation controls accessible.
+- Prevent horizontal scrolling.
+- Preserve readable text.
+- Ensure the cosmic experience can be exited easily.
+
+### Interaction accessibility
+
+Double-click is not a reliable interaction method on every touch device.
+
+Provide:
+
+- Double-click on desktop.
+- Double-tap or an explicit accessible activation control on touch devices.
+- Keyboard activation for the diamond and core.
+- Keyboard-accessible shard selection.
+- Visible focus indicators.
+- Accessible labels for interactive fragments.
+- Appropriate ARIA roles and states.
+
+Do not make essential functionality dependent on hover.
+
+---
+
+# 13. STATE MANAGEMENT & INTERACTION RELIABILITY
+
+Implement a clear, predictable state machine.
+
+Suggested states:
+
+```ts
+type CosmicStage =
+  | "idle"
+  | "fracturing"
+  | "orbital"
+  | "entering-universe"
+  | "universe"
+  | "selecting-shard"
+  | "shard-detail"
+  | "returning-to-universe"
+  | "reassembling";
+```
+
+Adapt this to the existing project architecture.
+
+### Important rules
+
+- Prevent double-click events from triggering multiple fracture sequences.
+- Prevent core clicks while the crystal is still fracturing.
+- Prevent multiple fragment selections during an active transition.
+- Prevent the reassembly action from being triggered repeatedly.
+- Keep the selected fragment ID consistent.
+- Preserve the explored-fragment counter.
+- Do not allow hidden elements to intercept pointer events.
+- Restore pointer interactions correctly after every transition.
+- Prevent accidental application navigation when clicking decorative elements.
+- Handle component unmounting safely.
+
+The feature must not enter a permanently locked or inconsistent state if an animation is interrupted.
+
+Provide a reliable way to return to the Dashboard from every stage.
+
+---
+
+# 14. DESIGN DIRECTION — PREMIUM COSMIC CRYSTAL AESTHETIC
+
+The visual language should feel:
+
+- Sophisticated.
+- Cinematic.
+- Elegant.
+- Deep.
+- Mysterious.
+- Technologically advanced.
+- Visually balanced.
+- Premium.
+
+### Primary visual palette
+
+Use the crystal's existing purple-violet identity as the central visual reference.
+
+Suggested supporting colors:
+
+- Deep space indigo.
+- Midnight violet.
+- Crystal purple.
+- Electric violet.
+- Soft cyan.
+- Subtle blue-white highlights.
+
+These are feature-local visual choices only.
+
+Do not change the application's global color palette.
+
+### Glassmorphism
+
+The information panel should use:
+
+- Translucent dark surfaces.
+- Controlled background blur.
+- Fine borders.
+- Subtle light reflections.
+- Carefully balanced shadows.
+- Premium spacing.
+- Clear typography.
+
+Avoid:
+
+- Excessive neon.
+- Excessive glow.
+- Too many gradients.
+- Overly bright backgrounds.
+- Unnecessary decorative icons.
+- Excessive visual noise.
+- Repeated cards inside cards.
+- Oversized headings.
+- Random floating labels.
+- Unnecessary borders and separators.
+
+The result should look expensive because of its precision, material quality, lighting, and motion — not because of the number of effects.
+
+---
+
+# 15. TECHNICAL IMPLEMENTATION DETAILS
+
+## 15.1 Crystal geometry
+
+The 10 fragments must be generated or defined as genuinely distinct geometries.
+
+Prefer deterministic geometry generation so each fragment maintains the same identity between stages.
+
+Each fragment should have stable geometry and material references.
+
+Do not randomly regenerate the fragments on every render.
+
+The initial diamond should be divided into a coherent set of 10 primary fragments.
+
+Their combined geometry should visually reconstruct the original diamond.
+
+Avoid large gaps in the reconstructed silhouette.
+
+## 15.2 Material system
+
+Create a reusable crystal material system.
+
+It should support:
+
+- Transparency.
+- Refraction or an appropriate visual approximation.
+- Facet-dependent highlights.
+- Internal illumination.
+- Edge highlights.
+- Reflection behavior.
+- Depth-dependent lighting.
+
+If true physical refraction is too expensive, use a carefully designed shader or layered material approach.
+
+Do not claim true physical refraction if the implementation only uses simple gradients.
+
+## 15.3 Orbital system
+
+Use one central orbital simulation.
+
+Each shard should have stable parameters such as:
+
+- Initial angle.
+- Orbit radius.
+- Angular velocity.
+- Rotation axis.
+- Depth.
+- Scale.
+- Phase offset.
+
+Update constellation lines from the current shard positions.
+
+Do not implement 10 unrelated animation loops if a centralized animation system is more efficient.
+
+## 15.4 Data and route separation
+
+Keep visual configuration separate from actual application navigation.
+
+The visual component must not contain hardcoded navigation assumptions scattered across event handlers.
+
+Use the application's existing router.
+
+If the existing app uses a route helper or navigation context, use that.
+
+Do not use full-page reloads unless the existing architecture explicitly requires them.
+
+## 15.5 Full-screen behavior
+
+The cosmic environment should cover the viewport without permanently changing the underlying Dashboard layout.
+
+Use an appropriate overlay or portal architecture.
+
+Preserve:
+
+- Scroll position.
+- Dashboard state.
+- Existing navigation state.
+- Theme settings.
+- User data.
+
+Lock background scrolling while the cosmic experience is active, and restore it when the experience closes.
+
+Ensure the overlay has a correct stacking context and does not unintentionally cover application-level notifications or essential controls.
+
+---
+
+# 16. ERROR HANDLING & FALLBACK BEHAVIOR
+
+The experience must remain functional if:
+
+- WebGL is unavailable.
+- 3D rendering fails.
+- The device has limited graphics performance.
+- An animation is interrupted.
+- A section route is missing.
+- A preview dataset is unavailable.
+- A user exits during a transition.
+- The component unmounts unexpectedly.
+
+Provide a graceful fallback.
+
+For example, if advanced 3D rendering is unavailable, use a simplified crystal visualization with CSS or Canvas while preserving the same three-stage interaction flow as far as practical.
+
+Do not allow a rendering failure to make the Dashboard unusable.
+
+Never leave the user trapped inside a full-screen experience.
+
+---
+
+# 17. IMPLEMENTATION WORKFLOW — FOLLOW THIS ORDER
+
+Do not immediately begin rewriting components.
+
+Follow this implementation sequence:
+
+### Phase 1 — Project inspection
+
+Inspect:
+
+- Existing Dashboard hero.
+- Existing diamond component.
+- Framework.
+- Routing.
+- Existing dependencies.
+- Animation system.
+- Styling architecture.
+- The actual 10 section destinations.
+
+Identify the safest integration point.
+
+### Phase 2 — Technical architecture
+
+Define:
+
+- Component boundaries.
+- Stage state machine.
+- Crystal geometry strategy.
+- Orbital system.
+- Core rendering.
+- Section configuration.
+- Route mapping.
+- Responsive behavior.
+
+### Phase 3 — Stage 1 implementation
+
+Implement:
+
+- Original crystal idle state.
+- Hover tooltip.
+- Double-click activation.
+- 10-fragment fracture.
+- Orbital stabilization.
+- Central energy core.
+- Core interaction.
+
+Test this stage inside the real Dashboard hero.
+
+### Phase 4 — Stage 2 implementation
+
+Implement:
+
+- Cinematic core zoom.
+- Full-screen cosmic environment.
+- Ten persistent crystal fragments.
+- Orbital movement.
+- Constellation connections.
+- Mouse parallax.
+- Top controls.
+
+### Phase 5 — Stage 3 implementation
+
+Implement:
+
+- Fragment selection.
+- Selected shard focus.
+- Background blur.
+- Left-side crystal positioning.
+- Section title reveal.
+- Salohiyat Pasporti panel.
+- Return-to-universe action.
+- Real section navigation.
+
+### Phase 6 — Reconstruction
+
+Implement the complete reverse transformation.
+
+Ensure all 10 fragments return to their original geometry and positions.
+
+Restore the Dashboard idle state.
+
+### Phase 7 — Responsive and performance optimization
+
+Test desktop, tablet, and mobile.
+
+Check animation performance, resource cleanup, reduced-motion behavior, and fallback rendering.
+
+### Phase 8 — Integration and regression testing
+
+Verify that no unrelated application functionality has changed.
+
+---
+
+# 18. ACCEPTANCE CRITERIA — REQUIRED BEFORE COMPLETION
+
+The implementation is not complete until all of the following work:
+
+## Stage 1
+
+- [ ] Existing Dashboard diamond is replaced in place.
+- [ ] Original hero layout remains unchanged.
+- [ ] Diamond has convincing translucent crystal material.
+- [ ] Tooltip appears on hover.
+- [ ] Double-click triggers an in-place fracture.
+- [ ] Exactly 10 unique primary fragments appear.
+- [ ] Fragments have visibly different asymmetric geometries.
+- [ ] Fragments move outward by approximately 40–90px.
+- [ ] Fragments settle into smooth orbital movement.
+- [ ] Central spherical energy core appears.
+- [ ] Core has a convincing 3D luminous appearance.
+- [ ] Core displays the entry hint.
+- [ ] Clicking the core enters Stage 2.
+
+## Stage 2
+
+- [ ] Full-screen cosmic environment opens smoothly.
+- [ ] Background contains subtle nebula and stars.
+- [ ] Exactly 10 persistent crystal fragments are visible.
+- [ ] Fragments preserve their Stage 1 identity.
+- [ ] Each fragment has independent orbital parameters.
+- [ ] Constellation lines update correctly.
+- [ ] Mouse parallax works smoothly.
+- [ ] Exploration counter displays correctly.
+- [ ] Reassembly control is visible and functional.
+
+## Stage 3
+
+- [ ] Every fragment is individually selectable.
+- [ ] Selected fragment moves to the left-center.
+- [ ] Selected fragment scales up smoothly.
+- [ ] Background becomes blurred and dimmed.
+- [ ] Information panel slides in from the right.
+- [ ] Correct section title appears.
+- [ ] Each section has its own meaningful description.
+- [ ] Preview metrics use real data or are clearly labeled illustrative.
+- [ ] "Bo‘limga o‘tish →" navigates to the correct existing route.
+- [ ] "← Barcha bo‘laklarga qaytish" restores the universe.
+- [ ] Previously explored fragments remain counted.
+
+## Reconstruction
+
+- [ ] All fragments return to the central core.
+- [ ] Original diamond is reconstructed.
+- [ ] Full-screen experience closes smoothly.
+- [ ] Dashboard returns to its original state.
+- [ ] No duplicate animation loops remain active.
+
+## Isolation
+
+- [ ] No unrelated component has been redesigned.
+- [ ] No existing route has been renamed.
+- [ ] No sidebar item has been changed.
+- [ ] No unrelated dataset has been modified.
+- [ ] No existing application functionality has been broken.
+
+---
+
+# 19. FINAL EXECUTION INSTRUCTIONS
+
+This is an implementation task, not merely a design proposal.
+
+Do not respond with only a conceptual explanation, mockup, or implementation plan.
+
+Inspect the real project and implement the feature directly within the existing application.
+
+Do not replace the entire application.
+
+Do not rewrite unrelated components.
+
+Do not use fake buttons or decorative controls that appear interactive but do nothing.
+
+Do not simulate navigation with placeholder routes.
+
+Do not use invented statistics in the information panel.
+
+Do not simplify the 10 unique crystal fragments into identical geometric shapes.
+
+Do not skip any of the three interaction stages.
+
+Do not stop after creating the visual appearance of the first stage.
+
+Complete the entire interaction flow.
+
+After implementation, provide a concise technical report containing:
+
+1. Which existing component was replaced.
+2. Which new components were created.
+3. Which rendering and animation technologies were used.
+4. How the 10 fragments are generated and preserved.
+5. Which actual application routes were connected.
+6. How responsive behavior and fallbacks work.
+7. Which acceptance criteria were tested.
+8. Any limitations that remain.
+
+If a requirement cannot be implemented because of an actual technical limitation, explain it precisely instead of silently omitting it.
+
+**FINAL CREATIVE DIRECTION:**
+
+The user should initially see a beautiful purple crystal inside the familiar Dashboard.
+
+They double-click it.
+
+The crystal fractures into ten distinct pieces, revealing a luminous cosmic core.
+
+They click the core and enter a mysterious universe.
+
+Ten unique crystal fragments orbit around the center, each representing a different dimension of Global University Intelligence.
+
+They select one fragment.
+
+The universe softly fades into the background, the chosen crystal moves into focus, and its full potential is revealed through the Salohiyat Pasporti.
+
+The experience should communicate one central idea:
+
+**GLOBAL UNIVERSITY INTELLIGENCE IS NOT JUST AN APPLICATION. IT IS AN INTERCONNECTED UNIVERSE OF TOOLS THAT WORK TOGETHER TO TURN A STUDENT'S AMBITIONS INTO REAL ACHIEVEMENTS.**
+
+Make every transition feel intentional. Make every crystal feel unique. Make every interaction meaningful. Preserve the integrity of the existing application.

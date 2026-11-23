@@ -1,0 +1,1503 @@
+# MASTER PROMPT — GLOBAL UNIVERSITY INTELLIGENCE
+# GLOBAL DATA EXPANSION, DATABASE COMPLETION, SMART SEARCH & FUNCTIONALITY OPTIMIZATION
+
+## 1. YOUR ROLE AND MISSION
+
+Act as a Senior Full-Stack Engineer, Database Architect, Geospatial Systems Engineer, Search Infrastructure Specialist, Data Research Engineer, UI/UX Optimization Expert, and Quality Assurance Engineer.
+
+Your mission is to perform a comprehensive functional upgrade of the existing **Global University Intelligence** application.
+
+The primary objective is to transform the application from a system that displays a limited number of sample universities, countries, cities, scholarships, and other opportunities into a genuinely comprehensive, scalable, searchable, and data-driven global education intelligence platform.
+
+This is NOT a request to redesign the entire application.
+
+This is NOT a request to replace existing components with new visual concepts.
+
+This is a request to improve the application's actual functionality, data coverage, search quality, database architecture, and reliability.
+
+The application should enable users to discover educational opportunities across the world without being restricted to a handful of predefined examples.
+
+**Core principle: EXPAND THE DATA, IMPROVE THE SEARCH, FIX THE FUNCTIONALITY, PRESERVE THE EXISTING DESIGN.**
+
+---
+
+# 2. CRITICAL PROTECTION RULES — DO NOT DAMAGE THE EXISTING APPLICATION
+
+Before making any changes, inspect the existing application and understand its architecture.
+
+The following requirements are mandatory.
+
+### DO NOT:
+
+- Redesign the existing application.
+- Change the global design system.
+- Replace the existing globe visualization.
+- Change the globe's appearance, geometry, lighting, animation, camera behavior, or interaction.
+- Remove existing features.
+- Rename existing sections.
+- Change existing sidebar items or their positions.
+- Modify unrelated page layouts.
+- Replace existing working components unnecessarily.
+- Delete existing database records.
+- Break existing user accounts or saved information.
+- Introduce fake universities, scholarships, or other educational opportunities.
+- Replace existing functional search with static sample arrays.
+- Hardcode a small collection of universities as the entire database.
+- Make changes to unrelated application functionality.
+
+### DO:
+
+- Preserve the existing visual identity.
+- Preserve the current globe exactly as it is.
+- Preserve existing routes and navigation.
+- Preserve existing user data.
+- Improve existing components rather than rebuilding everything.
+- Expand the underlying data architecture.
+- Improve the existing search system.
+- Connect all relevant sections to a scalable shared data infrastructure.
+- Maintain backward compatibility.
+
+**SPECIAL REQUIREMENT: THE GLOBE MUST REMAIN VISUALLY AND FUNCTIONALLY UNCHANGED.**
+
+Only correct or improve the university data displayed when a country is selected, if necessary. Do not redesign or replace the globe itself.
+
+---
+
+# 3. FIRST: COMPLETE PROJECT AUDIT
+
+Before implementation, inspect the existing application.
+
+Identify:
+
+1. Current frontend framework.
+2. Backend architecture.
+3. Database technology.
+4. Existing university datasets.
+5. Country and city datasets.
+6. Existing search implementation.
+7. Existing filters and sorting.
+8. API integrations.
+9. Data retrieval and caching mechanisms.
+10. Pagination or infinite scrolling.
+11. Existing scholarship database.
+12. Comparison functionality.
+13. Geographic visualization architecture.
+14. Existing error-handling mechanisms.
+15. Which components use sample data instead of real data.
+
+For each section, determine:
+
+- Which data is real?
+- Which data is static?
+- Which data is incomplete?
+- Which data is duplicated?
+- Which search functions are limited?
+- Which components fail when no exact match is found?
+- Which features display only a small number of predefined examples?
+
+Do not assume that an existing feature is fully functional just because it has a visually complete interface.
+
+Trace the actual data flow from database or external source to the user interface.
+
+After the audit, implement the required corrections directly.
+
+Do not stop after producing an audit report.
+
+---
+
+# 4. GLOBAL DATA INFRASTRUCTURE — THE MAIN UPGRADE
+
+The most important change is to improve the data architecture behind the application.
+
+The platform must not depend on small hardcoded lists.
+
+It should use a scalable data infrastructure capable of supporting:
+
+- Thousands of universities.
+- Hundreds of countries and territories where relevant.
+- Thousands of cities.
+- Large collections of academic programs.
+- Scholarships from different institutions.
+- International admission requirements.
+- Tuition and living-cost information.
+- University rankings.
+- Educational qualifications and certificates.
+- Country-specific education information.
+
+The exact number of records should depend on verified available data, not arbitrary targets.
+
+## 4.1 Global university database
+
+Create or improve a centralized university dataset.
+
+Each university should support the following fields where available:
+
+- Official university name.
+- Alternative names.
+- Local-language name.
+- English name.
+- Country.
+- City.
+- Region or province.
+- Geographic coordinates.
+- Official website.
+- University type.
+- Public/private status.
+- Established year.
+- Main academic fields.
+- Available degrees.
+- Available programs.
+- International student information.
+- Admission requirements.
+- Tuition fee information.
+- Available scholarships.
+- Official application link.
+- Recognized ranking information.
+- Data source.
+- Last verification date.
+
+Do not require every field to be populated before displaying a university.
+
+Show available verified information and clearly identify missing information.
+
+## 4.2 Data quality
+
+Every important data record should have a source and verification status.
+
+Use statuses such as:
+
+- Officially verified.
+- Verified by a recognized external source.
+- Institution-specific information.
+- Estimated.
+- User-provided.
+- Not yet verified.
+- Information unavailable.
+
+Do not present estimates as confirmed facts.
+
+Do not invent university names, locations, tuition fees, rankings, admission requirements, or scholarship availability.
+
+## 4.3 Data expansion strategy
+
+Use a combination of:
+
+- Official university websites.
+- Official government education portals.
+- Recognized university directories.
+- International higher-education datasets.
+- Reliable ranking organizations.
+- Official scholarship providers.
+- Verified public APIs.
+- Existing application data.
+
+Possible data-source categories include:
+
+- International university databases.
+- National higher-education registries.
+- Government education ministries.
+- Official university directories.
+- Recognized academic ranking providers.
+
+Use APIs or structured datasets where legally and technically appropriate.
+
+Do not depend entirely on scraping websites.
+
+Respect API terms, rate limits, licensing, robots policies, and applicable data protection requirements.
+
+If a data source requires an API key, do not expose the key in frontend code.
+
+Use secure backend integration.
+
+## 4.4 Data synchronization
+
+Where supported, implement a scalable update process.
+
+The system should:
+
+- Detect existing records.
+- Avoid duplicate universities.
+- Update outdated information.
+- Preserve user-created notes and saved universities.
+- Record when data was last updated.
+- Track the source of each update.
+- Avoid overwriting verified information with lower-quality data.
+- Log failed synchronization attempts.
+
+If automated synchronization is not supported, create a clear architecture that allows it to be added later.
+
+---
+
+# 5. SECTION ONE — DUNYO XARITASI
+
+## Objective
+
+Fix the incomplete university coverage in the existing World Map section.
+
+Currently, selecting certain countries displays only a few universities, while some countries display no universities at all.
+
+This must be corrected.
+
+### 5.1 Country selection behavior
+
+When the user selects ANY supported country on the existing globe:
+
+1. Preserve the existing globe.
+2. Preserve its current visual style and interaction.
+3. Allow the globe's existing camera behavior to focus on the selected country.
+4. Bring the selected country into a prominent viewing position.
+5. Display the country's available universities in a clear information panel.
+6. Show university names as they are displayed in the existing interface.
+7. Allow the user to explore more universities without being restricted to the initial visible list.
+
+The user should be able to select countries across the entire world, not just a predefined collection of popular destinations.
+
+### 5.2 Complete country university coverage
+
+For every supported country, retrieve as many relevant verified universities as the available data sources provide.
+
+Do not limit countries to:
+
+- 2 universities.
+- 5 universities.
+- 10 universities.
+- A small predefined sample.
+
+The system should be able to display the complete available dataset for the selected country.
+
+If a country has hundreds of universities, the user must be able to explore them through pagination, filters, or progressive loading.
+
+Do not load thousands of records into the interface simultaneously.
+
+### 5.3 Country information panel
+
+Improve the university list shown after selecting a country.
+
+Display:
+
+- Country name.
+- Country flag.
+- Total number of universities in the dataset.
+- Number of currently displayed universities.
+- Search field.
+- University list.
+- Relevant filters.
+- Sorting options.
+- Load more or pagination controls.
+
+Each university should display its official name and, where available:
+
+- City.
+- University type.
+- Relevant ranking information.
+- Academic specialization.
+- Official website.
+
+Keep the existing design language.
+
+### 5.4 Country-level university search
+
+When a country is selected, the search field should search all universities belonging to that country, not merely the currently loaded records.
+
+Support:
+
+- Official university names.
+- Alternative names.
+- Local names.
+- English names.
+- Abbreviations.
+- Common spelling variations.
+
+### 5.5 Empty country results
+
+If a country has no available records:
+
+Do not simply display an empty screen.
+
+Display a clear message indicating that verified university data is not currently available.
+
+Provide a retry or refresh mechanism if the backend supports it.
+
+Do not invent universities just to make the country appear populated.
+
+---
+
+# 6. SECTION TWO — SHAHARLAR BO‘YICHA
+
+## Objective
+
+Expand the City-based exploration section from a small predefined collection into a comprehensive global city and university discovery system.
+
+### 6.1 Remove fixed country shortcuts
+
+Currently, the section displays fixed shortcuts such as:
+
+- Japan.
+- UK.
+- US.
+
+Remove these as the primary predefined shortcuts.
+
+Instead, display a **Top 10 Global Student Cities** collection.
+
+The Top 10 must be based on a recognized, clearly identified student-city ranking or another reliable methodology.
+
+Each city should have:
+
+- City name.
+- Country.
+- Country flag.
+- University count where verified.
+- Relevant ranking and its source.
+- Short description.
+
+Do not invent rankings or imply that the Top 10 is an official global ranking if it is not.
+
+Make the ranking year visible.
+
+### 6.2 Universal city search
+
+Add a comprehensive city search system.
+
+The user should be able to type any real city name from anywhere in the world.
+
+Examples:
+
+- Tokyo.
+- Fukuoka.
+- Kitakyushu.
+- Osaka.
+- Kyoto.
+- Berlin.
+- Munich.
+- London.
+- Manchester.
+- New York.
+- Boston.
+- Toronto.
+- Seoul.
+- Busan.
+- Beijing.
+- Shanghai.
+- Singapore.
+- Sydney.
+- Melbourne.
+- Tashkent.
+- Samarkand.
+
+These are examples, not a restricted list.
+
+The search must work beyond these examples.
+
+Search should support:
+
+- City name.
+- Alternative city name.
+- Local spelling.
+- English spelling.
+- Country name.
+- Common transliterations.
+- Minor spelling mistakes.
+
+If a city exists in the supported geographic dataset, it should be discoverable.
+
+### 6.3 City discovery page
+
+When a user selects a city, display:
+
+- City name.
+- Country.
+- Geographic information.
+- Total universities found.
+- University list.
+- University search.
+- Available academic fields.
+- University types.
+- Official university links.
+- Available admission information.
+- Relevant scholarship opportunities where verified.
+
+### 6.4 Expand beyond a few universities
+
+Do not show only a handful of famous universities.
+
+Retrieve all universities available in the database for the selected city.
+
+Support:
+
+- Pagination.
+- Progressive loading.
+- Search within the city.
+- Sorting.
+- Filters.
+- University detail navigation.
+
+A city with 50 universities should not be restricted to displaying 5 or 10.
+
+### 6.5 City database
+
+Use a scalable global city dataset.
+
+Where appropriate, support:
+
+- Major cities.
+- University towns.
+- Regional cities.
+- Smaller cities with recognized higher-education institutions.
+
+Do not restrict the system to capital cities or famous tourist destinations.
+
+---
+
+# 7. SECTION THREE — MAMLAKATLAR
+
+## Objective
+
+Improve the Countries section without changing its existing overall structure.
+
+The section is already relatively functional, but its global coverage and university data are incomplete.
+
+### 7.1 Expand the country database
+
+The existing Asia and Europe filters should remain.
+
+However, the available countries are insufficient.
+
+Expand the dataset to include countries across all major world regions:
+
+- Asia.
+- Europe.
+- Africa.
+- North America.
+- South America.
+- Oceania.
+
+Include supported sovereign states and relevant territories where appropriate.
+
+Use a recognized country dataset and a consistent country identifier system, such as ISO 3166 codes.
+
+Do not restrict the platform to only popular education destinations.
+
+### 7.2 Country search panel
+
+Add a proper country search field.
+
+The user should be able to search by:
+
+- Country's English name.
+- Local name.
+- Common alternative name.
+- Country code where useful.
+
+Support spelling variations and minor typing mistakes.
+
+The search should work across all available countries, not only the currently selected regional filter.
+
+### 7.3 Country cards and mini-maps
+
+Preserve the existing country cards and small country-map visualizations.
+
+However, correct incomplete university information.
+
+For example, if Japan currently displays only two universities on its country card or mini-map, the displayed university dataset should be expanded.
+
+The number of university markers or listed universities should reflect actual available records.
+
+Do not force every university marker into a tiny map if that makes it unreadable.
+
+Use:
+
+- Marker clustering.
+- Zoom-dependent marker density.
+- University counts.
+- Interactive selection.
+- Progressive loading.
+
+The map should communicate university distribution clearly.
+
+### 7.4 Country detail
+
+When opening a country, show:
+
+- Total universities in the dataset.
+- Major university cities.
+- Available university list.
+- Education system overview where verified.
+- Common degree structures.
+- Tuition information where available.
+- Scholarship opportunities.
+- Relevant language requirements.
+- Official education resources.
+
+Do not present generalized country information as a universal rule for every university.
+
+Distinguish country-level requirements from institution-specific requirements.
+
+### 7.5 Region filtering
+
+Keep the existing region filters, but make them comprehensive.
+
+Users should be able to:
+
+- Select a continent.
+- Browse all supported countries in that continent.
+- Search across all countries.
+- Open any country.
+- Explore universities within that country.
+
+Selecting a region must not remove countries from the underlying global search.
+
+---
+
+# 8. SECTION FOUR — UNIVERSITETLAR
+
+## Objective
+
+Transform the Universities section into a genuinely comprehensive global university search engine.
+
+This is one of the most important parts of the entire application.
+
+The user must be able to discover universities even when they do not know the exact official spelling.
+
+### 8.1 Comprehensive university database
+
+Expand the university database as much as reliable data sources allow.
+
+Include:
+
+- Internationally recognized universities.
+- National universities.
+- Public universities.
+- Private universities.
+- Technical universities.
+- Research universities.
+- Specialized institutions.
+- Recognized universities outside the global top rankings.
+- Regional universities.
+- Universities in less frequently searched countries.
+
+Do not make global ranking position a condition for inclusion.
+
+A university should not be excluded merely because it is not internationally famous.
+
+However, distinguish universities from colleges, vocational schools, academies, and other higher-education institutions where the distinction matters.
+
+Do not falsely label every educational institution as a university.
+
+### 8.2 Advanced intelligent search
+
+The university search must be significantly more flexible.
+
+The user may search using:
+
+- Full official name.
+- Partial university name.
+- Acronym.
+- Alternative name.
+- Local-language name.
+- English name.
+- City.
+- Country.
+- Common transliteration.
+- Minor spelling mistakes.
+- Missing letters.
+- Extra letters.
+- Incorrect word spacing.
+- Approximate pronunciation-based spelling where technically feasible.
+
+For example, the system should be able to recognize searches that are close to:
+
+- "Tokyo University".
+- "The University of Tokyo".
+- "Tokyo daigaku".
+- "Univercity of Tokyo".
+- "Tokio university".
+- "Kyutech".
+- "Kyushu Institute of Technology".
+- "Kyushu Institute of Technlogy".
+
+These are illustrative examples of search flexibility.
+
+The system should recognize likely intended universities and display suggestions.
+
+### 8.3 Search architecture
+
+Do not implement fuzzy search using a single simplistic frontend condition.
+
+Use a layered search strategy:
+
+**Layer 1 — Exact matching**
+
+Search official names and known aliases.
+
+**Layer 2 — Prefix and partial matching**
+
+Find universities when the user types only part of a name.
+
+**Layer 3 — Fuzzy matching**
+
+Handle common spelling errors and minor typos.
+
+**Layer 4 — Alternative-name matching**
+
+Search local-language names, abbreviations, transliterations, and known alternative names.
+
+**Layer 5 — Geographic matching**
+
+Allow searches by city and country.
+
+**Layer 6 — Intelligent suggestions**
+
+When the exact university is not found, show likely matching institutions.
+
+Use suitable search infrastructure according to the existing backend.
+
+Possible technologies include:
+
+- PostgreSQL full-text search.
+- PostgreSQL trigram similarity.
+- Dedicated search engines where justified.
+- Indexed aliases.
+- Unicode normalization.
+- Language-aware tokenization.
+
+Do not introduce an unnecessarily complicated search stack if the existing database can support these features efficiently.
+
+### 8.4 Search experience
+
+The search should provide:
+
+- Fast results.
+- Suggestions while typing.
+- Clear university names.
+- City and country labels.
+- Search result highlighting.
+- Relevant ranking information where available.
+- Filters.
+- Sorting.
+- Clear no-result messages.
+- Typo-tolerant suggestions.
+
+If the user enters a misspelled name, do not immediately show an empty screen.
+
+Instead, display:
+
+**"Siz quyidagini nazarda tutdingizmi?"**
+
+Then show the most relevant possible matches.
+
+Do not silently redirect to a university when multiple matches are plausible.
+
+### 8.5 University filters
+
+Provide useful filters:
+
+- Country.
+- City.
+- Region.
+- Public/private.
+- University type.
+- Academic field.
+- Degree level.
+- Ranking availability.
+- Tuition range.
+- Scholarship availability.
+- International student support.
+
+Only show filters supported by actual data.
+
+### 8.6 University detail page
+
+Each university should have a meaningful detail profile.
+
+Where information is available, display:
+
+1. Official name.
+2. Alternative names.
+3. Country and city.
+4. Official website.
+5. University type.
+6. Recognized ranking information.
+7. Available academic fields.
+8. Bachelor's programs.
+9. Master's programs.
+10. Doctoral programs.
+11. Admission requirements.
+12. Language requirements.
+13. International student information.
+14. Tuition fees.
+15. Scholarships.
+16. Application deadlines.
+17. Official application portal.
+18. Source and verification date.
+
+Do not invent missing values.
+
+If a university does not publish a specific field, display an appropriate unavailable status.
+
+---
+
+# 9. SECTION FIVE — STIPENDIYALAR
+
+## Objective
+
+Expand the Scholarships section from a small collection of examples into a comprehensive international scholarship discovery platform.
+
+Users should be able to discover opportunities across many countries, institutions, degree levels, and academic fields.
+
+### 9.1 Scholarship coverage
+
+Include different types of scholarships:
+
+- Government-funded scholarships.
+- University-funded scholarships.
+- International organization scholarships.
+- Research scholarships.
+- Merit-based scholarships.
+- Need-based financial aid.
+- Tuition waivers.
+- Full scholarships.
+- Partial scholarships.
+- Undergraduate scholarships.
+- Master's scholarships.
+- Doctoral scholarships.
+- Exchange programs.
+- Country-specific scholarship programs.
+- Subject-specific funding opportunities.
+
+Examples of scholarship programs may include:
+
+- MEXT.
+- DAAD.
+- GKS.
+- Erasmus Mundus.
+- Chevening.
+- Fulbright.
+- Stipendium Hungaricum.
+- Türkiye Scholarships.
+- Government and university-specific scholarship programs.
+
+These examples are not an exhaustive list.
+
+### 9.2 Scholarship database fields
+
+Where available, store:
+
+- Official scholarship name.
+- Provider.
+- Country.
+- Eligible nationalities.
+- Degree level.
+- Eligible academic fields.
+- Funding coverage.
+- Tuition coverage.
+- Living allowance.
+- Accommodation support.
+- Travel support.
+- Eligibility requirements.
+- Language requirements.
+- Academic requirements.
+- Application opening date.
+- Application deadline.
+- Official application link.
+- Required documents.
+- Source.
+- Last verification date.
+- Current status.
+
+### 9.3 Smart scholarship search
+
+Allow users to filter scholarships by:
+
+- Country.
+- Nationality eligibility.
+- Degree level.
+- Academic field.
+- Funding type.
+- Full or partial funding.
+- Language requirements.
+- Deadline.
+- Current application status.
+
+Users should also be able to search by scholarship name and provider.
+
+### 9.4 Important reliability rules
+
+Never display an expired scholarship as currently open.
+
+Distinguish:
+
+- Currently open.
+- Upcoming.
+- Closed.
+- Recurring but dates unconfirmed.
+- Historical.
+- Information requires verification.
+
+Do not invent deadlines or funding amounts.
+
+Do not claim that a user is eligible unless the relevant eligibility conditions have been evaluated.
+
+---
+
+# 10. SECTION SIX — TAQQOSLASH
+
+## Objective
+
+Expand the comparison functionality so users can compare a meaningful number of real alternatives.
+
+The comparison system should not be restricted to a few manually selected examples.
+
+Depending on the existing comparison architecture, support:
+
+### University comparison
+
+Compare:
+
+- University location.
+- Academic fields.
+- Degree programs.
+- Admission requirements.
+- Language requirements.
+- Tuition.
+- Scholarships.
+- Available student support.
+- Rankings from identified sources.
+- Application deadlines.
+
+### Country comparison
+
+Compare:
+
+- Education systems.
+- Tuition ranges.
+- Scholarship opportunities.
+- Language requirements.
+- Student living costs.
+- Student work regulations where verified.
+- University availability.
+- Admission pathways.
+
+### City comparison
+
+Compare:
+
+- Number of universities.
+- Student-city rankings.
+- Living costs.
+- Accommodation estimates.
+- Transportation.
+- Student facilities.
+- Academic environment.
+
+### Scholarship comparison
+
+Compare:
+
+- Funding coverage.
+- Eligibility.
+- Degree level.
+- Academic requirements.
+- Language requirements.
+- Deadlines.
+- Application process.
+
+### Certificate comparison
+
+Where the existing application supports certificates, compare:
+
+- Recognition.
+- Purpose.
+- Scoring system.
+- Validity.
+- Examination format.
+- Relevant countries and institutions.
+- Fees where verified.
+
+### Comparison UX
+
+Users should be able to:
+
+- Search for alternatives.
+- Add items to comparison.
+- Remove items.
+- Compare multiple relevant options.
+- See differences clearly.
+- Save comparisons if the existing application supports persistence.
+
+Avoid limiting users to a fixed list of two or three predefined options.
+
+Use sensible limits only when required by technical performance or interface usability.
+
+---
+
+# 11. OTHER SECTIONS — EXPAND THE ENTIRE PLATFORM
+
+The same small-dataset problem may exist in other parts of the application.
+
+Audit all remaining sections and identify where a small hardcoded sample is being mistaken for a complete dataset.
+
+The objective is to increase the real breadth of available choices.
+
+Depending on existing functionality, examine:
+
+### Academic programs
+
+Expand the available programs by:
+
+- University.
+- Country.
+- Degree level.
+- Academic field.
+- Specialization.
+- Language of instruction.
+
+### Courses
+
+Where applicable, include:
+
+- University courses.
+- Preparatory programs.
+- Foundation programs.
+- Language courses.
+- Online courses.
+- Professional development opportunities.
+
+### Admission requirements
+
+Expand the availability of:
+
+- Academic entry requirements.
+- Required documents.
+- Language scores.
+- Entrance examinations.
+- Program-specific prerequisites.
+- Application deadlines.
+
+### International qualifications
+
+Expand the certificate and qualification database where relevant.
+
+Do not restrict it to a handful of popular examples.
+
+### Living-cost information
+
+Where supported, expand city-level cost information.
+
+Distinguish:
+
+- Officially published fees.
+- Verified estimates.
+- Historical values.
+- User-provided values.
+
+### Any other discovery-based section
+
+If a section allows users to browse, compare, search, or select real-world opportunities, ensure it is not artificially limited to a few hardcoded examples.
+
+However, do not add unrelated functionality or redesign modules that already work correctly.
+
+---
+
+# 12. GLOBAL SEARCH EXPERIENCE
+
+A comprehensive application requires a unified and reliable search experience.
+
+Improve search functionality consistently across relevant sections.
+
+### 12.1 Search capabilities
+
+Where appropriate, support:
+
+- Exact matching.
+- Partial matching.
+- Fuzzy matching.
+- Alternative names.
+- Local-language names.
+- English names.
+- Transliteration.
+- Common abbreviations.
+- Minor spelling mistakes.
+- Unicode normalization.
+
+### 12.2 Search result ranking
+
+Prioritize results using:
+
+1. Exact official-name match.
+2. Exact alternative-name match.
+3. Strong partial match.
+4. Strong fuzzy match.
+5. Geographic match.
+6. Related relevant result.
+
+Do not rank a weakly related result above an exact match.
+
+### 12.3 Search interface
+
+Provide:
+
+- Immediate feedback.
+- Loading indicators.
+- Search suggestions.
+- Result counts.
+- Clear filters.
+- Sorting.
+- Pagination.
+- No-result guidance.
+- Error messages.
+- Search reset.
+
+Search should remain usable when the database contains thousands of records.
+
+### 12.4 Search language
+
+The interface should respect the application's current language.
+
+However, the underlying search should be capable of finding universities and cities regardless of whether the user enters:
+
+- English.
+- Local-language spelling.
+- Common transliteration.
+- Known alternative names.
+
+Do not translate official university names incorrectly.
+
+Display the official name alongside an appropriate localized description where available.
+
+---
+
+# 13. DATABASE ARCHITECTURE & PERFORMANCE
+
+A large database requires proper infrastructure.
+
+Do not simply place thousands of records into frontend arrays.
+
+### 13.1 Database design
+
+Inspect and improve the existing schema.
+
+Use normalized relationships where appropriate.
+
+Potential entities include:
+
+- Countries.
+- Cities.
+- Universities.
+- UniversityAliases.
+- UniversityLocations.
+- AcademicPrograms.
+- DegreeLevels.
+- AdmissionRequirements.
+- Scholarships.
+- ScholarshipEligibility.
+- Rankings.
+- Certificates.
+- EducationCosts.
+- DataSources.
+- DataVerificationHistory.
+
+Adapt names and structure to the existing database.
+
+Avoid creating duplicate entities if equivalent tables already exist.
+
+### 13.2 Indexing
+
+Create suitable indexes for frequently used search fields.
+
+Consider:
+
+- University official name.
+- University aliases.
+- Country ID.
+- City ID.
+- Geographic coordinates.
+- Scholarship provider.
+- Degree level.
+- Academic field.
+
+Use database indexing appropriate to the existing technology.
+
+### 13.3 Pagination and loading
+
+For large datasets:
+
+- Use server-side pagination.
+- Use efficient filtering.
+- Use progressive loading.
+- Use caching where appropriate.
+- Avoid unnecessary repeated requests.
+- Avoid loading the entire global database into browser memory.
+
+The user should still be able to search the entire dataset even when only one page of results is currently visible.
+
+### 13.4 Duplicate detection
+
+Detect duplicate universities and other records using:
+
+- Official identifiers.
+- Website domains.
+- Known aliases.
+- Country and city.
+- Name similarity.
+- External dataset identifiers.
+
+Do not merge records automatically when the match is uncertain.
+
+Keep a review mechanism for ambiguous duplicates.
+
+### 13.5 Data update strategy
+
+Where possible, support:
+
+- Incremental updates.
+- Scheduled synchronization.
+- Manual refresh.
+- Failed-job logging.
+- Source tracking.
+- Update timestamps.
+- Duplicate prevention.
+
+Do not overwrite user-created content.
+
+---
+
+# 14. DATA ACCURACY, TRUST & TRANSPARENCY
+
+A large dataset is useful only if it is reliable.
+
+Implement clear data transparency.
+
+### Every important record should identify:
+
+- Where the information came from.
+- When it was last verified.
+- Whether it is official or estimated.
+- Whether it is current or historical.
+
+### Ranking information
+
+Never mix rankings from different organizations as if they use the same methodology.
+
+Display:
+
+- Ranking organization.
+- Ranking edition/year.
+- Position or range.
+- Source.
+
+### Tuition information
+
+Display:
+
+- Currency.
+- Academic year where available.
+- Annual or semester basis.
+- International or domestic student category where relevant.
+- Whether the value is official or estimated.
+
+### Scholarship information
+
+Display current application status and verified deadlines.
+
+### Missing information
+
+Use clear labels such as:
+
+- Information unavailable.
+- Not yet verified.
+- Institution-specific information.
+- Estimated value.
+- Historical data.
+
+Do not fill empty fields with invented information.
+
+---
+
+# 15. USER EXPERIENCE IMPROVEMENTS
+
+The objective is not merely to display more records.
+
+The user must be able to discover them comfortably.
+
+Improve the following where necessary:
+
+- Search speed.
+- Search suggestions.
+- Filter usability.
+- Sorting.
+- Result readability.
+- Result count visibility.
+- University cards.
+- Country cards.
+- City cards.
+- Detail pages.
+- Empty states.
+- Loading states.
+- Error states.
+- Pagination.
+- Mobile responsiveness.
+
+### Result counts
+
+Show meaningful counts.
+
+For example:
+
+- "1,248 universities found."
+- "86 universities in this city."
+- "142 universities in this country."
+
+Only show counts calculated from the actual relevant dataset.
+
+Clearly distinguish between:
+
+- Total records in the database.
+- Results matching current filters.
+- Results currently loaded on screen.
+
+### Empty states
+
+When no result is found:
+
+- Suggest spelling alternatives.
+- Offer similar matches.
+- Allow filter reset.
+- Preserve the user's search text.
+- Explain whether the issue is no matching record or unavailable data.
+
+Do not display a blank page.
+
+### Responsive behavior
+
+Ensure all expanded datasets remain usable on:
+
+- Desktop.
+- Laptop.
+- Tablet.
+- Mobile.
+
+Do not sacrifice the existing visual design to accommodate more data.
+
+Use efficient lists, pagination, collapsible filters, and responsive cards.
+
+---
+
+# 16. QUALITY ASSURANCE — TEST REAL FUNCTIONALITY
+
+After implementation, test the actual application.
+
+Do not consider the work complete simply because the pages render.
+
+## World Map tests
+
+- Select Japan.
+- Verify that the available Japanese university records are displayed.
+- Select Germany.
+- Select the United States.
+- Select Uzbekistan.
+- Select a less frequently represented country.
+- Verify that country selection retrieves the appropriate dataset.
+- Confirm that the original globe remains unchanged.
+
+## Cities tests
+
+- Search Tokyo.
+- Search Fukuoka.
+- Search Kitakyushu.
+- Search Berlin.
+- Search London.
+- Search Tashkent.
+- Search a smaller university city.
+- Verify that results are not limited to the predefined Top 10.
+
+## Countries tests
+
+- Search Japan.
+- Search Uzbekistan.
+- Search Germany.
+- Browse Asia.
+- Browse Europe.
+- Browse Africa.
+- Browse North America.
+- Browse South America.
+- Browse Oceania.
+- Verify that all supported countries are discoverable.
+
+## Universities tests
+
+Test:
+
+- Exact university name.
+- Partial university name.
+- Acronym.
+- Alternative name.
+- Misspelled university name.
+- Missing letters.
+- Incorrect word spacing.
+- Local transliteration.
+- City search.
+- Country search.
+
+Verify that relevant results appear.
+
+## Scholarships tests
+
+- Search by scholarship name.
+- Search by provider.
+- Filter by country.
+- Filter by degree level.
+- Filter by funding type.
+- Verify deadlines and current status.
+- Verify that expired opportunities are not presented as open.
+
+## Comparison tests
+
+- Add multiple universities.
+- Compare countries.
+- Compare cities.
+- Compare scholarships.
+- Verify that values and sources are correct.
+
+## Performance tests
+
+- Large search result sets.
+- Multiple filters.
+- Rapid search input.
+- Pagination.
+- Empty results.
+- Slow network.
+- API failure.
+- Database timeout.
+- Mobile layout.
+
+---
+
+# 17. IMPLEMENTATION ORDER
+
+Complete the work in the following order.
+
+### Phase 1 — Audit
+
+Identify the real reasons behind incomplete data and limited search.
+
+### Phase 2 — Data architecture
+
+Improve the shared data infrastructure and database relationships.
+
+### Phase 3 — World Map
+
+Fix country university coverage without modifying the globe.
+
+### Phase 4 — Cities
+
+Replace fixed country shortcuts with a verified Top 10 student-city collection and implement universal city search.
+
+### Phase 5 — Countries
+
+Expand country coverage, add search, and correct university counts and country details.
+
+### Phase 6 — Universities
+
+Implement comprehensive discovery, advanced search, aliases, typo tolerance, filters, and detailed profiles.
+
+### Phase 7 — Scholarships
+
+Expand the scholarship database and search capabilities.
+
+### Phase 8 — Comparison
+
+Expand available comparison choices and improve the comparison workflow.
+
+### Phase 9 — Other sections
+
+Audit remaining discovery-based modules and correct the same limited-dataset problem where it exists.
+
+### Phase 10 — Testing
+
+Test actual data retrieval, search, filtering, navigation, performance, and visual integrity.
+
+Do not skip earlier phases if later functionality depends on them.
+
+---
+
+# 18. ACCEPTANCE CRITERIA
+
+The task is complete only when:
+
+- [ ] The original globe is visually unchanged.
+- [ ] Country selection retrieves the available university records for that country.
+- [ ] Countries are not artificially limited to a few predefined universities.
+- [ ] Cities section displays a verified Top 10 global student-city collection.
+- [ ] Any supported city can be searched.
+- [ ] City results are not restricted to a handful of universities.
+- [ ] Countries section includes comprehensive global geographic coverage.
+- [ ] Countries section has a functional search field.
+- [ ] Country mini-maps reflect actual available university data.
+- [ ] Universities section supports broad international coverage.
+- [ ] University search recognizes common spelling mistakes.
+- [ ] University aliases and alternative names are searchable.
+- [ ] Search covers the full dataset, not just the currently loaded records.
+- [ ] Scholarships section has broader, verified opportunity coverage.
+- [ ] Comparison sections provide more meaningful alternatives.
+- [ ] Other discovery-based sections have been audited for artificial data limitations.
+- [ ] Large datasets use efficient pagination and filtering.
+- [ ] No fake records have been introduced.
+- [ ] Existing saved data remains intact.
+- [ ] Existing routes continue to work.
+- [ ] No unrelated interface has been redesigned.
+- [ ] Desktop and mobile functionality have been tested.
+
+---
+
+# 19. FINAL EXECUTION REQUIREMENTS
+
+This is a real application improvement task.
+
+Do not respond with only recommendations.
+
+Do not create another static demonstration.
+
+Do not merely increase the number of visible cards while leaving the underlying database incomplete.
+
+Do not replace missing data with fabricated examples.
+
+Do not hardcode thousands of university names into frontend code.
+
+Do not claim that all global universities are covered unless the actual data coverage supports that claim.
+
+Implement the actual data retrieval, database, search, filtering, and user-interface improvements.
+
+If an external API or dataset is required:
+
+1. Identify the appropriate source.
+2. Verify its capabilities and limitations.
+3. Integrate it securely where possible.
+4. Document required credentials or configuration.
+5. Provide a graceful fallback if the source is unavailable.
+
+If the current backend cannot support a requirement, explain the exact limitation and implement the best compatible solution without damaging existing functionality.
+
+After implementation, provide a technical completion report containing:
+
+- What was broken.
+- What was corrected.
+- Which database changes were made.
+- Which data sources were integrated.
+- How many verified records are now available, separated by category.
+- Which search capabilities were added.
+- Which sections remain incomplete.
+- Which tests were performed.
+- Any remaining technical limitations.
+
+**FINAL PRODUCT VISION**
+
+Global University Intelligence should become a genuinely global educational discovery platform.
+
+A user should be able to select a country on the globe, discover its universities, search for any city, find universities in that city, investigate institutions by name even with spelling mistakes, explore international scholarships, and compare real opportunities.
+
+The platform must not feel like a collection of a few examples.
+
+It must feel like a comprehensive, interconnected global education intelligence system.
+
+**DO NOT MAKE THE APPLICATION LOOK BIGGER. MAKE ITS ACTUAL CAPABILITIES BIGGER.**
